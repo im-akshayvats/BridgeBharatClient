@@ -10,15 +10,16 @@ export default function App() {
   const [loadingPercentage, setLoadingPercentage] = useState(0);
 
   useEffect(() => {
-    let timer = 5;
-    const intervalId = setTimeout(() => {
-      setLoadingPercentage(loadingPercentage + 1)
-    }, timer);
-    if (loadingPercentage === 100) {
-      setIsLoaded(true)
-      clearInterval(intervalId);
+    let timer = 25;
+    if (!isLoaded) {
+      setTimeout(() => {
+        setLoadingPercentage(loadingPercentage + 1)
+      }, timer);
     }
-  }, [loadingPercentage])
+    if (loadingPercentage === 100) {
+      setIsLoaded(true);
+    }
+  }, [isLoaded, loadingPercentage])
 
   if (isLoaded) {
     return (
