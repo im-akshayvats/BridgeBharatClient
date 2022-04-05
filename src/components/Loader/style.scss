@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
-
 .loadingScreenContent {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('../assets/Images/loading_background.svg');
+  background-image: url('../assets/images/loading_background.svg');
   background-color: #193166;
   background-position: center;
   background-size: cover;

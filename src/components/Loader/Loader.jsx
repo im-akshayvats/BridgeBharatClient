@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
 
-import Logo from '../assets/Images/logo_white.svg';
+import Logo from '../assets/images/logo_white.svg';
 
 import './style.scss';
 
