@@ -10,17 +10,17 @@ export default function CatalogLarge() {
         <Grid container xs={12}>
           <Grid item xs={4} p={5} className='catalogCardContent'>
             <Typography variant='h6'>
-              Dolor sit amet, cons ectetuer adipiscing elit, sed diam 
+              End To End<br />Digital Wholesale 
             </Typography>
           </Grid>
           <Grid item xs={4} p={5} className='catalogCardContent'>
             <Typography variant='h6'>
-              Dolor sit amet, cons ectetuer adipiscing elit, sed diam 
+              Easy to use<br />Customization tools
             </Typography> 
           </Grid>
           <Grid item xs={4} p={5}>
-            <Typography variant='h6'>
-              Dolor sit amet, cons ectetuer adipiscing elit, sed diam 
+            <Typography variant='h6' className='catalogCardContent'>
+              Exclusive<br />Marketing Content
             </Typography> 
           </Grid>
         </Grid>

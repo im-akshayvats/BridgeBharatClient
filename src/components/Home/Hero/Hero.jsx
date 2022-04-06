@@ -12,13 +12,13 @@ export default function Hero() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Simple, Hassle-free &amp;<br>Trusted supply chain",
-        "Sentence Two",
-        "Sentence Three"
+        "Simple, Hassle-free &amp; Trusted supply chain",
+        "Curated collection of sustainable products that inspire conversations",
+        "Customize collections unique to your brand"
       ],
       startDelay: 300,
       typeSpeed: 100,
-      backSpeed: 100,
+      backSpeed: 50,
       backDelay: 3000,
       smartBackspace: true,
       loop: true

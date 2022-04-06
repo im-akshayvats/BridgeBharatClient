@@ -19,6 +19,9 @@ section.catalogLarge {
     background-position: center;
     background-repeat: no-repeat;
     .catalogCardContent {
+      color: #786D63;
+    }
+    .catalogCardContent:not(:last-child) {
       border-right: 1px solid #B2977C;
     }
   }
