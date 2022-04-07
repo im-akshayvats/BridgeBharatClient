@@ -4,6 +4,7 @@ import Hero from './Hero/Hero';
 import CatalogLarge from './CatalogLarge/CatalogLarge';
 import Introduction from './Introduction/Introduction';
 import CatalogSmall from './CatalogSmall/CatalogSmall';
+import Solutions from './Solutions/Solutions';
 import Collaborators from './Collaborators/Collaborators';
 import Quote from './Quote/Quote';
 
@@ -16,7 +17,9 @@ export default function Home() {
       <CatalogLarge />
       <Introduction />
       <CatalogSmall />
+      <Solutions />
       <Collaborators />
+      <CatalogLarge />
       <Quote />
     </main>
   )
