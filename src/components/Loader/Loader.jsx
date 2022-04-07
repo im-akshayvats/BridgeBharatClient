@@ -24,7 +24,7 @@ export default function Loader({percentage}) {
         Experience the ease of digital wholesale buying
       </Typography>
       <Typography
-        variant='h1'
+        variant='h3'
         className='loadingPercentage'
         mt={3}
       >

@@ -2,38 +2,6 @@ section.catalogLarge {
   * {
     font-family: 'Mulish';
     font-weight: 600;
+    font-size: 1.2rem;
   }
-  .catalogCard {
-    * {
-      font-family: Cormorant Garamond;
-      font-weight: 500;
-    }
-    height: 230px;
-    position: relative;
-    top: -7em;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-image: url('../assets/images/cardBackground.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    .catalogCardContent {
-      color: #786D63;
-    }
-    .catalogCardContent:not(:last-child) {
-      border-right: 1px solid #B2977C;
-    }
-  }
-  // .catalogCard::before {
-  //   content: '';
-  //   height: 100%;
-  //   width: 99%;
-  //   position: absolute;
-  //   top: 5px;
-  //   left: 5px;
-  //   background-image: url('../assets/images/cardOutline.svg');
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  // }
 }

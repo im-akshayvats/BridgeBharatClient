@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import { Container, Typography, TextField, Box } from '@mui/material';
+import { Container, Typography, TextField, Box, Grid } from '@mui/material';
 import { Search } from '@mui/icons-material'
 import Typed from "typed.js";
-
 
 import './style.scss';
 
@@ -12,9 +11,9 @@ export default function Hero() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Simple, Hassle-free &amp; Trusted supply chain",
-        "Curated collection of sustainable products that inspire conversations",
-        "Customize collections unique to your brand"
+        "Simple, Hassle-free &amp;<br/>Trusted supply",
+        "Curated collection of sustainable<br/>products that inspire conversations",
+        "Customize collections<br/>unique to your brand"
       ],
       startDelay: 300,
       typeSpeed: 100,
@@ -42,6 +41,25 @@ export default function Hero() {
             fullWidth
           />
           <Search className='searchIcon'/>
+        </Box>
+        <Box className='catalogCard'>
+          <Grid container xs={12}>
+            <Grid item xs={4} className='catalogCardContent'>
+              <Typography variant='h5'>
+                End To End<br />Digital Wholesale 
+              </Typography>
+            </Grid>
+            <Grid item xs={4} className='catalogCardContent'>
+              <Typography variant='h5'>
+                Easy to use<br />Customization tools
+              </Typography> 
+            </Grid>
+            <Grid item xs={4} className='catalogCardContent'>
+              <Typography variant='h5'>
+                Exclusive<br />Marketing Content
+              </Typography> 
+            </Grid>
+          </Grid>
         </Box>
       </Container>
     </section>
