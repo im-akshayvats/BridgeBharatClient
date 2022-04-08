@@ -1,0 +1,23 @@
+section.collaborators {
+  * {
+    font-family: Cormorant Garamond;
+  }
+  .collaboratorsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .collaboratorsImages {
+      width: 100%;
+      margin-bottom: 5rem;
+      display: flex;
+      justify-content: space-around;
+      .collaboratorImage {
+        cursor: pointer;
+      }
+    }
+    button {
+      color: #CE4C16;
+      border-color: #CE4C16;
+    }
+  }
+}
