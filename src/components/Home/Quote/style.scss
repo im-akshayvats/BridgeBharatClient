@@ -1,0 +1,30 @@
+section.quote {
+  .quoteContainer {
+    display: flex;
+    align-items: center;
+    .quoteImage {
+      min-height: 295px;
+      min-width: 295px;
+      background-color: #09184B;
+      border-radius: 50%;
+      margin-right: 5em;
+    }
+    .quoteContent {
+      position: relative;
+    }
+    .quoteContent::before {
+      content: '“';
+      position: absolute;
+      top: -0.5em;
+      left: -0.5em;
+      font-size: 5em;
+    }
+    .quoteContent::after {
+      content: '”';
+      position: absolute;
+      bottom: -0.9em;
+      right: 0;
+      font-size: 5em;
+    }
+  }
+}
