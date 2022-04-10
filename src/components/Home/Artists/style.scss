@@ -1,0 +1,21 @@
+section.artists {
+  .artistsContainer {
+    .artistsContent {
+      padding: 2em;
+      .artistsHeading {
+        font-family: Cormorant Garamond;
+        margin-bottom: 1em;
+        color: #E08B19;
+      }
+      button {
+        color: #CE4C16;
+        border-color: #CE4C16;
+      }
+    }
+    .artistReverse {
+      .artistWrapper {
+        background-color: #CE4C16;
+      }
+    }
+  }
+}
