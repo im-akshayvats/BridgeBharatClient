@@ -7,7 +7,7 @@ import Introduciton from './Introduction/Introduction';
 export default function Home() {
   return (
     <main>
-      <Container maxWidth={'xl'}>
+      <Container>
         <Hero />
         <Introduciton />
       </Container>

@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  nav {
+    min-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navLink {
+      color: #193166;
+    }
+  }
+  img {
+    height: 80px;
+  }
+}
