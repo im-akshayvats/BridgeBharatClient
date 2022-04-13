@@ -9,6 +9,10 @@ header {
     justify-content: space-between;
     align-items: center;
     .navLink {
+      font-family: 'Josefin Sans', sans-serif;
+      cursor: pointer;
+      letter-spacing: 0.2em;
+      font-weight: 600;
       color: #193166;
     }
   }

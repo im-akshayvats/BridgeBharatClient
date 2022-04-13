@@ -7,14 +7,15 @@ section.hero {
     margin: 0.35em 0;
     letter-spacing: 0.2em;
     color: #193166;
-    font-style: normal;
-
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
     .desi {
-      color: orange;
+      color: #ce4c16;
       font-style: italic;
     }
   }
   .subHeading {
+    font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 0.2em;
     line-height: 40px;
     color: #193166;
@@ -31,6 +32,7 @@ section.hero {
       border-color: #193166;
       p {
         margin: 0 2rem;
+        font-family: 'Josefin Sans', sans-serif;
       }
     }
   }
