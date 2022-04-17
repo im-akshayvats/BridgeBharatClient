@@ -1,0 +1,35 @@
+.message {
+  padding: 2em 0;
+  .container {
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .heading {
+        width: 50%;
+        font-family: Cormorant Garamond;
+        color: #786D63;
+      }
+      .description {
+        width: 40%;
+        font-family: Josefin Sans;
+        span.fontOrange {
+          color: #ce4c16;
+        }
+      }
+    }
+    .videoBox {
+      width: 100%;
+      video {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.message:nth-child(odd) {
+  background-color: #fdfaf7;
+}
