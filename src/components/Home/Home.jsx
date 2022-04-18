@@ -15,6 +15,7 @@ export default function Home() {
       <Introduciton />
       <ProductCatalog />
       <CommercialMessages />
+      <ProductCatalog />
       <Solutions />
       <Partners />
       <Testimonials />
