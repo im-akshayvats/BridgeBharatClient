@@ -6,6 +6,7 @@ import ProductCatalog from './ProductCatalog/ProductCatalog';
 import CommercialMessages from './CommercialMessages/CommercialMessages';
 import Solutions from './Solutions/Solutions';
 import Partners from './Partners/Partners';
+import Testimonials from './Testimonials/Testimonials';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <CommercialMessages />
       <Solutions />
       <Partners />
+      <Testimonials />
     </main>
   )
 }

@@ -1,0 +1,94 @@
+.cardBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-right: 2em;
+  margin: 2em 0;
+  .imageBox {
+    position: relative;
+    left: 75px;
+    z-index: 5;
+    img {
+      height: 150px;
+      border-radius: 50%;
+    }
+    div.dot {
+      position: absolute;
+      border-radius: 50%;
+    }
+    div.dotOne {
+      top: 5px;
+      left: 0px;
+      height: 18px;
+      width: 18px;
+      background-color: rgba(25, 49, 102, 1);
+    }
+    div.dotTwo {
+      top: -10px;
+      left: 15px;
+      height: 10px;
+      width: 10px;
+      background-color: rgba(224, 139, 25, 1);
+    }
+    div.dotThree {
+      top: 0.5em;
+      right: -0.5em;
+      height: 44px;
+      width: 44px;
+      background-color: rgba(206, 76, 22, 1);
+    }
+    div.dotFour {
+      bottom: 0;
+      left: -10px;
+      height: 54px;
+      width: 54px;
+      background-color: rgba(224, 139, 25, 1);
+    }
+    div.dotFive {
+      bottom: -10px;
+      left: 25px;
+      height: 38px;
+      width: 38px;
+      background-color: rgba(25, 49, 102, 1);
+    }
+    div.dotSix {
+      bottom: -30px;
+      left: 0px;
+      height: 19px;
+      width: 19px;
+      background-color: rgba(206, 76, 22, 1);
+    }
+  }
+  .contentBox {
+    padding: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+    background-color: rgba(252, 246, 240, 1);
+    box-shadow: 5px 10px 10px gainsboro;
+    ;
+    border-radius: 20px;
+    color: rgba(206, 76, 22, 1);
+    position: relative;
+    .review {
+      font-family: Josefin Sans;
+      margin-bottom: 0.5em;
+    }
+    .author {
+      font-family: Josefin Sans;
+    }
+    .downQuote {
+      position: absolute;
+      top: 1em;
+      left: 1em;
+    }
+    .upQuote {
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+    }
+  }
+}
