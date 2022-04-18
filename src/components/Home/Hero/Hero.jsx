@@ -18,17 +18,17 @@ export default function Hero() {
         <Box className='buttonContainer'>
           <Button variant="outlined">
             <Typography>
-              Catalog
+              JOIN THE WAITLIST
             </Typography>
           </Button>
           <Button variant="outlined">
             <Typography>
-              Customize
+              CONNECT
             </Typography>
           </Button>
           <Button variant="outlined">
             <Typography>
-              Connect
+              EXPLORE
             </Typography>
           </Button>
         </Box>
