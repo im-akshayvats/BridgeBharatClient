@@ -1,0 +1,12 @@
+section.partners {
+  overflow: hidden;
+  margin: 5em 0;
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .partnerImage {
+    height: 220px;
+    width: min-content;
+  }
+}
