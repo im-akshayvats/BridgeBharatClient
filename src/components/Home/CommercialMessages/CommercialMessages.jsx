@@ -3,9 +3,10 @@ import React from 'react';
 import MessageTemplate from './MessageTemplate/MessageTemplate';
 
 import './style.scss';
-import endToEnd from '../assets/images/endToEndPic.gif';
+import endToEnd from '../assets/images/endToEndImage.png';
 import customization from '../assets/videos/customizationVideo.m4v';
 import marketing from '../assets/images/marketing.svg';
+import marketingVideo from '../assets/videos/marketingVideo.m4v';
 
 export default function CommercialMessages() {
   return (
@@ -27,6 +28,7 @@ export default function CommercialMessages() {
         description={'From our grassroot research and relationships, get access to our detailed guide of history and process behind the making of the product.'}
         highlightedDescription={'Offer your customer a complete experience of Indian products'}
         image={marketing}
+        video={marketingVideo}
       />
     </section>
   )
