@@ -7,6 +7,7 @@ import CommercialMessages from './CommercialMessages/CommercialMessages';
 import Solutions from './Solutions/Solutions';
 import Partners from './Partners/Partners';
 import Testimonials from './Testimonials/Testimonials';
+import Footer from '../Footer/Footer';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Solutions />
       <Partners />
       <Testimonials />
+      <Footer />
     </main>
   )
 }
