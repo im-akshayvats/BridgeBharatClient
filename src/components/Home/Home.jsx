@@ -2,7 +2,6 @@ import React from 'react';
 
 import Hero from './Hero/Hero';
 import Introduciton from './Introduction/Introduction';
-import ProductCatalog from './ProductCatalog/ProductCatalog';
 import Features from './Features/Features';
 import CommercialMessages from './CommercialMessages/CommercialMessages';
 import Solutions from './Solutions/Solutions';
@@ -15,10 +14,8 @@ export default function Home() {
     <main>
       <Hero />
       <Introduciton />
-      <ProductCatalog />
       <Features />
       <CommercialMessages />
-      <ProductCatalog />
       <Solutions />
       <Partners />
       <Testimonials />
