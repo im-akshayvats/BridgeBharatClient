@@ -1,4 +1,4 @@
-section.productCatalog {
+section.pictureCatalog {
   overflow: hidden;
   // height: 600px;
   .catalogContainer {
@@ -20,18 +20,13 @@ section.productCatalog {
       .imageContainer {
         .paintingImageContainer {
           position: relative;
+          transition: 250ms ease-in-out all;
           img {
             border: 10px solid black;
             cursor: pointer;
             transition: 250ms ease-in-out all;
             margin: 10px;
             position: relative;
-          }
-          img:hover {
-            transform: scale(2);
-            border: none;
-            box-shadow: none;
-            z-index: 5;
           }
           img::after {
             content: 'Name';
@@ -41,9 +36,38 @@ section.productCatalog {
             z-index: 5;
           }
           .paintingMiniInfo {
+            display: none;
             position: absolute;
-            right: 0;
-            top: 0;
+            right: -87px;
+            top: 2em;
+            .name {
+              width: 110px;
+              background-color: #193166;
+              color: white;
+              font-size: 12px;
+              padding: 2px 6px;
+              font-family: Josefin Sans;
+            }
+            .description {
+              width: 80px;
+              background-color: #E08B19;
+              color: white;
+              font-size: 8px;
+              padding: 2px 6px;
+              font-family: Josefin Sans;
+
+            }
+          }
+        }
+        .paintingImageContainer:hover {
+          z-index: 5;
+          transform: scale(2);
+          img {
+            border: none;
+            box-shadow: none;
+          }
+          .paintingMiniInfo {
+            display: initial;
           }
         }
       }
@@ -85,6 +109,48 @@ section.productCatalog {
         font-family: 'Josefin Sans', sans-serif;
         position: absolute;
         bottom: 3em;
+      }
+    }
+  }
+}
+
+.modalBox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  * {
+    font-family: 'Josefin Sans' !important;
+    color: #897F77;
+  }
+  .closeButton {
+    position: absolute;
+    top: 0em;
+    right: 0.4em;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 4em;
+    color: #193166;
+    opacity: 0.75;
+    transition: 300ms ease-in-out all;
+  }
+  .closeButton:hover {
+    opacity: 1;
+  }
+  .artImageContainer {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+  .artContentContainer {
+    width: 60%;
+    margin-top: 2em;
+    .viewMoreButton {
+      color: #193166;
+      border-color: #193166;
+      span {
+        color: #193166;
       }
     }
   }
