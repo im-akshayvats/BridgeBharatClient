@@ -14,7 +14,7 @@ export default function Features() {
           <div className="feature">
             <img src={blueLogo} alt="Logo" />
             <Typography variant='body1' className='featureName' color={'#CE4C16'}>
-              SMALL<br />MOQs
+              SMALL<br />MoQs
             </Typography>
           </div>
           <div className="feature">
@@ -38,7 +38,7 @@ export default function Features() {
           <div className="feature">
             <img src={blueLogo} alt="Logo" />
             <Typography variant='body1' className='featureName' color={'#CE4C16'}>
-              MARKETING<br />COLLATERALS
+              MARKETING<br />COLLATERAL
             </Typography>
           </div>
         </Box>
