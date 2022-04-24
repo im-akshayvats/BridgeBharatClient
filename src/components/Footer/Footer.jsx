@@ -1,7 +1,56 @@
-import React from 'react'
+import React from 'react';
+import { Container, Typography } from '@mui/material';
+import { NavLink } from 'react-router-dom';
+import { Instagram, Facebook, LinkedIn, Twitter } from '@mui/icons-material';
+
+import './style.scss'
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <footer>
+      <Container maxWidth='xl' className='footerContainer'>
+        <Typography variant='h4' mt={'80px'}>
+          Dedicated to the strength and resilience of<br />the world’s small businesses
+        </Typography>
+        <Typography className='copyright' my={'40px'}>
+          ©BRIDGE BHARAT 2022
+        </Typography>
+        <input type="text" placeholder='Product and brand search....' />
+        <div className="navigationLinks">
+          <NavLink
+            to={`/`}
+            className='navLink'
+          >
+            ABOUT US
+          </NavLink>
+          <NavLink
+            to={`/`}
+            className='navLink'
+          >
+            JOIN THE WAITLIST
+          </NavLink>
+          <NavLink
+            to={`/`}
+            className='navLink'
+          >
+            EXPLORE
+          </NavLink>
+        </div>
+        <div className="otherLinks">
+          <div className="tc">
+            TERMS & CONDITIONS
+          </div>
+          <div className="socialMediaHandles">
+            <Instagram />
+            <Facebook />
+            <LinkedIn />
+            <Twitter />
+          </div>
+          <div className="pp">
+            PRIVACY & POLICY
+          </div>
+        </div>
+      </Container>
+    </footer>
   )
 }
