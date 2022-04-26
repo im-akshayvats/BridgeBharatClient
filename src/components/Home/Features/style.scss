@@ -29,3 +29,19 @@ section.features {
     }
   }
 }
+
+@media only screen and (max-width: 720px) {
+  section.features {
+    padding: 2em 0 4em 0;
+    .featuresBox {
+      overflow-x: scroll;
+      padding: 2em 0;
+      .feature {
+        min-width: 30vw;
+        .featureName {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}
