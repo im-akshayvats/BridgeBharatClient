@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer>
       <Container maxWidth='xl' className='footerContainer'>
-        <Typography variant='h4' mt={'80px'}>
+        <Typography variant='h4' mt={'80px'} className='heading'>
           Dedicated to the strength and resilience of<br />the world’s small businesses
         </Typography>
         <Typography className='copyright' my={'40px'}>
@@ -41,10 +41,10 @@ export default function Footer() {
             TERMS & CONDITIONS
           </div>
           <div className="socialMediaHandles">
-            <Instagram />
-            <Facebook />
-            <LinkedIn />
-            <Twitter />
+            <Instagram className='socialIcon'/>
+            <Facebook className='socialIcon'/>
+            <LinkedIn className='socialIcon'/>
+            <Twitter className='socialIcon'/>
           </div>
           <div className="pp">
             PRIVACY & POLICY

@@ -60,3 +60,44 @@ footer {
     }
   }
 }
+
+@media only screen and (max-width: 720px) {
+  footer {
+    .footerContainer {
+      .heading {
+        font-size: 5vw;
+      }
+      .copyright {
+        font-size: 3vw;
+      }
+      input {
+        width: 80vw;
+        font-size: 12px;
+      }
+      .navigationLinks {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .navLink {
+          margin-right: 0 !important;
+          font-weight: lighter;
+          font-size: 4vw !important;
+        }
+        .navLink:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+      .otherLinks {
+        .socialMediaHandles {
+          width: 20vw;
+          .socialIcon {
+            width: 4vw;
+          }
+        }
+        .tc, .pp {
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+}
