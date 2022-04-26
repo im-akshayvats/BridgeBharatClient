@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import { Box } from '@mui/material';
 
@@ -10,10 +10,25 @@ import partnerFour from '../assets/images/partnerFour.png';
 import partnerFive from '../assets/images/partnerFive.png';
 
 export default function Partners() {
+  const [slides , setSlides] = useState(4);
+
+  useEffect(() => {
+    if (window.outerWidth < 720) {
+      setSlides(2);
+    }
+    window.addEventListener('resize', () => {
+      if (window.outerWidth > 720) {
+        setSlides(4);
+      } else {
+        setSlides(2);
+      }
+    });
+  }, [])
+
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: slides,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
