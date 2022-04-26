@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Container, Typography, Button, Box, Modal } from '@mui/material';
+import { ExpandMore } from '@mui/icons-material';
 
 import './style.scss';
 import couch from '../assets/images/sofa.svg';
@@ -30,6 +31,16 @@ export default function PaintingCatalog() {
   const [dimensions, setDimensions] = useState(null);
   const [about, setAbout] = useState(null);
 
+  const [expanded, setExpanded] = useState(false);
+  const handleClick = () => {
+    if (expanded) {
+      return setExpanded(false);
+    }
+    return setExpanded(true);
+  }
+  const paintingContainer = useRef(null);
+  const toggleButton = useRef(null);
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => {
     setName(null);
@@ -42,6 +53,15 @@ export default function PaintingCatalog() {
   };
 
   useEffect(() => {
+    const paintingSection = document.querySelector('.pictureCatalog')
+    if (expanded) {
+      paintingContainer.current.style.height = '2060px';
+      toggleButton.current.style.transform = 'rotate(180deg)';
+    } else {
+      paintingContainer.current.style.height = '460px';
+      toggleButton.current.style.transform = 'rotate(0deg)';
+      paintingSection.scrollIntoView({ behavior: 'smooth' })
+    }
     const elements = document.querySelectorAll('.paintingImageContainer');
     elements.forEach(element => {
       element.addEventListener('click', () => {
@@ -120,10 +140,10 @@ export default function PaintingCatalog() {
               <img src={image} alt="Art" />
             </div>
             <div className="artContentContainer">
-              <Typography variant="h4" component="h2" style={{color:'#193166'}}>
+              <Typography variant="h4" className='name' component="h2" style={{color:'#193166'}}>
                 {name}
               </Typography>
-              <Typography variant='h5' sx={{fontWeight: 700}}>
+              <Typography variant='h5' className='artist' sx={{fontWeight: 700}}>
                 {artist}
               </Typography>
               <Typography variant='h6' mt={10}>
@@ -140,9 +160,9 @@ export default function PaintingCatalog() {
           </Box>
         </Modal>
         <Typography variant='h4' className='catalogHeading'>
-          Inimitable Indian Traditional Art from the Masters<br />made with Natural Pigments
+          Indian Traditional Art from the Masters<br />made with Natural Pigments
         </Typography>
-        <Box className='paintingsContainer'>
+        <Box className='paintingsContainer' ref={paintingContainer}>
           <div className="imageContainer firstContainer">
             <div className='paintingImageContainer' name='one'>
               <img className='paintingImage' src={one} alt="Painting" width={105}/>
@@ -209,6 +229,10 @@ export default function PaintingCatalog() {
           <img src={couch} alt="Couch" />
           <Button variant='outlined' className='viewMoreButton'>view more</Button>
         </Box>
+        <Button variant='outlined' className='viewMoreSmallButton'>View More</Button>
+        <div className='toggleButton' ref={toggleButton} onClick={handleClick}>
+          <ExpandMore/>
+        </div>
       </Container>
     </section>
   )

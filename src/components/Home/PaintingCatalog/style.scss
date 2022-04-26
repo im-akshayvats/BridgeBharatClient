@@ -1,6 +1,5 @@
 section.pictureCatalog {
   overflow: hidden;
-  // height: 600px;
   .catalogContainer {
     display: flex;
     flex-direction: column;
@@ -27,6 +26,7 @@ section.pictureCatalog {
             transition: 250ms ease-in-out all;
             margin: 10px;
             position: relative;
+            padding: 13px;
           }
           img::after {
             content: 'Name';
@@ -111,6 +111,18 @@ section.pictureCatalog {
         bottom: 3em;
       }
     }
+    .viewMoreSmallButton {
+        display: none;
+        color: #193166;
+        border-color: #193166;
+        border-width: 2px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-top: 1em;
+    }
+    .toggleButton {
+      display: none;
+      margin-top: 1em;
+    }
   }
 }
 
@@ -150,6 +162,92 @@ section.pictureCatalog {
       color: #193166;
       border-color: #193166;
       span {
+        color: #193166;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  section.pictureCatalog {
+    .catalogContainer {
+      .catalogHeading {
+        font-size: 5.5vw;
+        color: black;
+      }
+      .paintingsContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: hidden;
+        transition: 750ms ease-in-out all;
+        .imageContainer {
+          flex-direction: column;
+          align-items: center;
+          .paintingImageContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1em 0;
+            img {
+              width: 260px;
+            }
+            .paintingMiniInfo {
+              display: initial;
+              position: initial;
+              text-align: center;
+              width: 100%;
+              .name {
+                width: 100%;
+                font-size: 1.5em;
+                background: none;
+                color: #193166;
+                text-transform: uppercase;
+              }
+              .description {
+                width: 100%;
+                font-size: 1em;
+                background: none;
+                color: #193166;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+      .imageButtonBox {
+        display: none;
+      }
+      .viewMoreSmallButton {
+        display: initial;
+      }
+      .toggleButton {
+        display: initial;
+      }
+    }
+  }
+  .modalBox {
+    width: 90vw !important;
+    flex-direction: column;
+    height: 90vh;
+    overflow: scroll;
+    padding: 64px 32px !important;
+    * {
+      text-align: center;
+      font-size: 4vw;
+    }
+    .artImageContainer {
+      width: 100%;
+    }
+    .artContentContainer {
+      width: 100%;
+      .name {
+        font-size: 5vw;
+        text-transform: uppercase;
+      }
+      .artist {
+        margin-top: 0.5em;
+        font-size: 5vw;
         color: #193166;
       }
     }
