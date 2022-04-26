@@ -33,3 +33,25 @@
 .message:nth-child(odd) {
   background-color: #fdfaf7;
 }
+
+@media only screen and (max-width: 720px) {
+  .message {
+    .container {
+      .content {
+        flex-direction: column;
+        .heading {
+          width: auto;
+          font-size: 10vw;
+          text-align: center;
+          margin-bottom: 1.5em;
+        }
+        .description {
+          width: 100%;
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 1.5em;
+        }
+      }
+    }
+  }
+}
