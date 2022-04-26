@@ -5,3 +5,9 @@ section.introduction {
   position: relative;
   overflow: hidden;
 }
+
+@media only screen and (max-width: 720px) {
+  section.introduction {
+    height: 100vh;
+  }
+}
