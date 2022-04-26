@@ -49,7 +49,7 @@ export default function ProductCatalog() {
         <div className="toggleButton" ref={toggleButton} onClick={handleClick}>
           <ExpandMore />
         </div>
-        <Button variant='outlined' className='viewMoreButton'>view more</Button>
+        <Button variant='outlined' className='viewMoreButton'>explore</Button>
       </Container>
     </section>
   )
