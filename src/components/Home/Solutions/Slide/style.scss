@@ -43,3 +43,20 @@
     }
   }
 }
+
+@media only screen and (max-width: 720px) {
+  .slideContent {
+    height: 100vh;
+    .slideContentWrapper {
+      justify-content: space-around;
+      .slideHeading {
+        font-size: 12.5vw;
+      }
+      .slideDescription {
+        h4 {
+          font-size: 5vw;
+        }
+      }
+    }
+  }
+}
