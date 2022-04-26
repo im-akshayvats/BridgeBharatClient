@@ -11,10 +11,35 @@ section.productCatalog {
       width: 100%;
       display: flex;
       justify-content: space-evenly;
+      transition: 750ms ease-in-out all;
+    }
+    .toggleButton {
+      margin-bottom: 2em;
+      display: none;
     }
     .viewMoreButton {
       color: #193166;
       border-color: #193166;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  section.productCatalog {
+    .productsContainer {
+      .heading {
+        font-size: 6vw;
+        text-align: center;
+      }
+      .products {
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: hidden;
+        padding: 2em 0;
+      }
+      .toggleButton {
+        display: initial;
+      }
     }
   }
 }

@@ -14,3 +14,20 @@ div.productCard {
     font-family: Josefin Sans;
   }
 }
+
+@media only screen and (max-width: 720px) {
+  div.productCard {
+    img {
+      height: unset !important;
+    }
+    .name {
+      font-size: 1em;
+    }
+  }
+  div.productCard:not(:last-child) {
+    margin: 0 0 3em 0;
+  }
+  div.productCard:last-child {
+    margin: 0;
+  }
+}
