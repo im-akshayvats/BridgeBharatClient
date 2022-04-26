@@ -13,17 +13,29 @@ export default function Header() {
     return setIsOpen(true)
   };
   const smallNavigation = useRef(null);
+  const header = useRef(null);
 
   useEffect(() => {
     if (isOpen) {
-      smallNavigation.current.style.height = '150px';
+      header.current.style.height = '100vh'
+      smallNavigation.current.style.height = '80vh';
     } else {
+      header.current.style.height = 'unset'
       smallNavigation.current.style.height = '0px';
     }
+    window.addEventListener('resize', () => {
+      if (window.outerWidth > 720) {
+        if (isOpen) {
+          header.current.style.height = 'unset';
+          smallNavigation.current.style.height = '0px';
+          setIsOpen(false);
+        }
+      }
+    })
   })
 
   return (
-    <header>
+    <header ref={header}>
       <Container className="navBarContainer">
         <div className="hamburger" onClick={handleClick}>
           <div className="layer"></div>
@@ -38,13 +50,11 @@ export default function Header() {
         </nav>
         <img src={logo} alt="BBLogo" />
       </Container>
-      <Container>
         <nav className='smallNavigation' ref={smallNavigation}>
           <Typography variant='h6' className='navLink'>ABOUT US</Typography>
           <Typography variant='h6' className='navLink'>CATALOG</Typography>
           <Typography variant='h6' className='navLink'>CONTACT US</Typography>
         </nav>
-      </Container>
     </header>
   )
 }
