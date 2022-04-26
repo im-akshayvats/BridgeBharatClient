@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
 
 import './style.scss';
 import Card from './Card/Card';
 
 export default function Testimonials() {
+  const [slides , setSlides] = useState(2);
+
+  useEffect(() => {
+    if (window.outerWidth < 720) {
+      setSlides(1);
+    }
+    window.addEventListener('resize', () => {
+      if (window.outerWidth > 720) {
+        setSlides(2);
+      } else {
+        setSlides(1);
+      }
+    });
+  }, [])
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: slides,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     cssEase: "linear"
   };

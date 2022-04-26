@@ -68,8 +68,6 @@
     align-items: flex-end;
     height: 300px;
     background-color: rgba(252, 246, 240, 1);
-    // box-shadow: 5px 10px 10px gainsboro;
-    ;
     border-radius: 20px;
     color: rgba(206, 76, 22, 1);
     position: relative;
@@ -89,6 +87,64 @@
       position: absolute;
       bottom: 1em;
       right: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .cardBox {
+    .imageBox {
+      img {
+        height: 25vw;
+      }
+      div.dotOne {
+        height: 3vw;
+        width: 3vw;
+      }
+      div.dotTwo {
+        height: 1.5vw;
+        width: 1.5vw;
+      }
+      div.dotThree {
+        height: 6.5vw;
+        width: 6.5vw;
+      }
+      div.dotFour {
+        height: 8vw;
+        width: 8vw;
+      }
+      div.dotFive {
+        bottom: -10px;
+        left: 15px;
+        height: 7vw;
+        width: 7vw;
+      }
+      div.dotSix {
+        height: 3.5vw;
+        width: 3.5vw;
+      }
+    }
+    .contentBox {
+      padding: 8vw 5vw 8vw 6em;
+      height: unset;
+      .review {
+        font-size: 3vw;
+      }
+      .author {
+        font-size: 4vw;
+      }
+      .downQuote {
+        width: 5vw;
+        position: absolute;
+        top: 1.5em;
+        left: 4.5em;
+      }
+      .upQuote {
+        width: 5vw;
+        position: absolute;
+        bottom: 1em;
+        right: 0;
+      }
     }
   }
 }
