@@ -7,7 +7,7 @@ import banner from '../assets/images/banner.svg';
 export default function Hero() {
   return (
     <section className="hero">
-      <Container>
+      <Container className='heroContainer'>
         <img src={banner} alt="Banner" />
         <Typography variant='h3' className='heading'>
           YOUR <span className='desi'>DESI</span> WHOLESALE PARTNER
@@ -16,17 +16,17 @@ export default function Hero() {
           INDIAN HANDCRAFTED PRODUCTS FROM 4000+ ARTISANAL COMMUNITIES
         </Typography>
         <Box className='buttonContainer'>
-          <Button variant="outlined">
+          <Button variant="outlined" className='join'>
             <Typography>
               JOIN THE WAITLIST
             </Typography>
           </Button>
-          <Button variant="outlined">
+          <Button variant="outlined" className='connect'>
             <Typography>
               CONNECT
             </Typography>
           </Button>
-          <Button variant="outlined">
+          <Button variant="outlined" className='explore'>
             <Typography>
               EXPLORE
             </Typography>
