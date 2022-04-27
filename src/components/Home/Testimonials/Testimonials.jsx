@@ -25,7 +25,7 @@ export default function Testimonials() {
     speed: 500,
     slidesToShow: slides,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     cssEase: "linear"
   };
