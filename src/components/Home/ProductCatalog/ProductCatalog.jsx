@@ -13,7 +13,9 @@ import mirror from '../assets/images/mirror.svg';
 export default function ProductCatalog() {
   const [expanded, setExpanded] = useState(false);
   const handleClick = () => {
+    const productSection = document.querySelector('.productCatalog');
     if (expanded) {
+      productSection.scrollIntoView({behavior: 'smooth'});
       return setExpanded(false);
     }
     return setExpanded(true);
@@ -22,14 +24,12 @@ export default function ProductCatalog() {
   const toggleButton = useRef(null);
 
   useEffect(() => {
-    const productSection = document.querySelector('.productCatalog');
     if (expanded) {
       productList.current.style.height = '2070px';
       toggleButton.current.style.transform = 'rotate(180deg)'
     } else {
       productList.current.style.height = '440px';
       toggleButton.current.style.transform = 'rotate(0deg)'
-      productSection.scrollIntoView({behavior: 'smooth'});
     }
   })
 

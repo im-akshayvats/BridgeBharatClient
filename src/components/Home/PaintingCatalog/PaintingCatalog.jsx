@@ -33,7 +33,9 @@ export default function PaintingCatalog() {
 
   const [expanded, setExpanded] = useState(false);
   const handleClick = () => {
+    const paintingSection = document.querySelector('.pictureCatalog');
     if (expanded) {
+      paintingSection.scrollIntoView({ behavior: 'smooth' });
       return setExpanded(false);
     }
     return setExpanded(true);
@@ -53,14 +55,12 @@ export default function PaintingCatalog() {
   };
 
   useEffect(() => {
-    const paintingSection = document.querySelector('.pictureCatalog')
     if (expanded) {
       paintingContainer.current.style.height = '2060px';
       toggleButton.current.style.transform = 'rotate(180deg)';
     } else {
       paintingContainer.current.style.height = '460px';
       toggleButton.current.style.transform = 'rotate(0deg)';
-      paintingSection.scrollIntoView({ behavior: 'smooth' })
     }
     const elements = document.querySelectorAll('.paintingImageContainer');
     elements.forEach(element => {
