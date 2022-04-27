@@ -64,6 +64,9 @@ header {
       justify-content: center;
       overflow: hidden;
       flex: 0 1 auto;
+      .navLink {
+        color: #193166;
+      }
       .navLink:not(:last-child) {
         margin-bottom: 1.5em;
       }

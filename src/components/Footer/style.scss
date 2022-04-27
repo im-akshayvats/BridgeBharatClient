@@ -20,7 +20,7 @@ footer {
       font-size: 16px;
       color: gray;
       outline: none;
-      border: 0.25px solid gray;
+      border: none;
       border-radius: 5px;
       margin-bottom: 40px;
       font-family: Segoe UI !important;
@@ -96,6 +96,7 @@ footer {
         }
         .tc, .pp {
           font-size: 2vw;
+          line-height: 3em;
         }
       }
     }

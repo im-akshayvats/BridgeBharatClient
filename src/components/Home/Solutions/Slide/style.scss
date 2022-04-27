@@ -51,10 +51,13 @@
       justify-content: space-around;
       .slideHeading {
         font-size: 12.5vw;
+        width: 80%;
+        text-align: center;
       }
       .slideDescription {
         h4 {
           font-size: 5vw;
+          font-family: Josefin Sans !important;
         }
       }
     }
