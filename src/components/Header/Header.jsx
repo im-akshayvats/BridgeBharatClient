@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Container, Typography } from '@mui/material';
 
 import './style.scss';
-import logo from '../assets/images/logo.svg'
+
+const logo = 'https://bridge-bharat.s3.amazonaws.com/images/global/logo.svg';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);

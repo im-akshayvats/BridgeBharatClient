@@ -3,11 +3,12 @@ import Slider from "react-slick";
 import { Box } from '@mui/material';
 
 import './style.scss';
-import partnerOne from '../assets/images/partnerOne.png';
-import partnerTwo from '../assets/images/partnerTwo.png';
-import partnerThree from '../assets/images/partnerThree.png';
-import partnerFour from '../assets/images/partnerFour.png';
-import partnerFive from '../assets/images/partnerFive.png';
+
+const partnerOne = 'https://bridge-bharat.s3.amazonaws.com/images/home/partnerOne.png';
+const partnerTwo = 'https://bridge-bharat.s3.amazonaws.com/images/home/partnerTwo.png';
+const partnerThree = 'https://bridge-bharat.s3.amazonaws.com/images/home/partnerThree.png';
+const partnerFour = 'https://bridge-bharat.s3.amazonaws.com/images/home/partnerFour.png';
+const partnerFive = 'https://bridge-bharat.s3.amazonaws.com/images/home/partnerFive.png';
 
 export default function Partners() {
   const [slides , setSlides] = useState(4);

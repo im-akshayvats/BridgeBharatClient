@@ -2,9 +2,10 @@ import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
 
 import './style.scss';
-import blueLogo from '../assets/images/blue.svg';
-import orangeLogo from '../assets/images/orange.svg';
-import yellowLogo from '../assets/images/yellow.svg';
+
+const blueLogo = 'https://bridge-bharat.s3.amazonaws.com/images/home/blue.svg';
+const orangeLogo = 'https://bridge-bharat.s3.amazonaws.com/images/home/orange.svg'
+const yellowLogo = 'https://bridge-bharat.s3.amazonaws.com/images/home/yellow.svg';
 
 export default function Features() {
   return (

@@ -2,7 +2,8 @@ import React from 'react';
 import { Typography, Box, Button, Container } from '@mui/material';
 
 import './style.scss';
-import banner from '../assets/images/banner.svg';
+
+const banner = 'https://bridge-bharat.s3.amazonaws.com/images/home/banner.svg';
 
 export default function Hero() {
   return (

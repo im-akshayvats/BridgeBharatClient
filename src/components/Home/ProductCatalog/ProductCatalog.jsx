@@ -1,14 +1,16 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Container, Typography, Button } from '@mui/material';
-import { ExpandMore } from '@mui/icons-material'
+import { ExpandMore } from '@mui/icons-material';
+
+import Product from './Product/Product';
 
 import './style.scss';
-import Product from './Product/Product';
-import candleStands from '../assets/images/candleStands.svg';
-import lamps from '../assets/images/lamps.svg';
-import vases from '../assets/images/vases.svg';
-import plates from '../assets/images/plates.svg';
-import mirror from '../assets/images/mirror.svg';
+
+const candleStands = 'https://bridge-bharat.s3.amazonaws.com/images/home/candleStands.svg';
+const lamps = 'https://bridge-bharat.s3.amazonaws.com/images/home/lamps.svg';
+const vases = 'https://bridge-bharat.s3.amazonaws.com/images/home/vases.svg';
+const plates = 'https://bridge-bharat.s3.amazonaws.com/images/home/plates.svg';
+const mirror = 'https://bridge-bharat.s3.amazonaws.com/images/home/mirror.svg';
 
 export default function ProductCatalog() {
   const [expanded, setExpanded] = useState(false);

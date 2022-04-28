@@ -3,9 +3,10 @@ import React from 'react';
 import MessageTemplate from './MessageTemplate/MessageTemplate';
 
 import './style.scss';
-import endToEnd from '../assets/images/endToEndImage.png';
-import customization from '../assets/images/customization.gif';
-import marketing from '../assets/images/marketing.gif';
+
+const endToEnd = 'https://bridge-bharat.s3.amazonaws.com/images/home/endToEndImage.png';
+const customization = 'https://bridge-bharat.s3.amazonaws.com/images/home/customization.gif';
+const marketing = 'https://bridge-bharat.s3.amazonaws.com/images/home/marketing.gif';
 
 export default function CommercialMessages() {
   return (

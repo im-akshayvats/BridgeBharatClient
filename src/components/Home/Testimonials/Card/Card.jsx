@@ -2,9 +2,10 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 
 import './style.scss';
-import authorImage from '../../assets/images/reviewAuthor.png';
-import upQuote from '../../assets/images/upQuote.png';
-import downQuote from '../../assets/images/downQuote.png';
+
+const authorImage = 'https://bridge-bharat.s3.amazonaws.com/images/home/reviewAuthor.png';
+const upQuote = 'https://bridge-bharat.s3.amazonaws.com/images/home/upQuote.png';
+const downQuote = 'https://bridge-bharat.s3.amazonaws.com/images/home/downQuote.png';
 
 export default function Card({review, author}) {
   return (

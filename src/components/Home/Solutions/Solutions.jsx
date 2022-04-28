@@ -6,10 +6,10 @@ import './style.scss';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import sustainable from '../assets/images/sustainable.png';
-import authentic from '../assets/images/authentic.png'
-import communityCentric from '../assets/images/communityCentric.png';
-import handpicked from '../assets/images/handpicked.png';
+const sustainable = 'https://bridge-bharat.s3.amazonaws.com/images/home/sustainable.png';
+const authentic = 'https://bridge-bharat.s3.amazonaws.com/images/home/authentic.png';
+const communityCentric = 'https://bridge-bharat.s3.amazonaws.com/images/home/communityCentric.png';
+const handpicked = 'https://bridge-bharat.s3.amazonaws.com/images/home/handpicked.png';
 
 export default function Solutions() {
   const settings = {

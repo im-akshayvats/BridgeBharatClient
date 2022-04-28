@@ -3,8 +3,8 @@ import { Container, Typography } from '@mui/material';
 
 import './style.scss';
 
-import gesture from '../../assets/images/gesture.svg';
-import gestureTwo from '../../assets/images/gestureTwo.svg';
+const gesture = 'https://bridge-bharat.s3.amazonaws.com/images/home/gesture.svg';
+const gestureTwo = 'https://bridge-bharat.s3.amazonaws.com/images/home/gestureTwo.svg';
 
 class Heading extends Component {
   constructor(props) {

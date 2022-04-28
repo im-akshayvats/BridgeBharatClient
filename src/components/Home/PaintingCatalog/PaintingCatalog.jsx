@@ -3,12 +3,13 @@ import { Container, Typography, Button, Box, Modal } from '@mui/material';
 import { ExpandMore } from '@mui/icons-material';
 
 import './style.scss';
-import couch from '../assets/images/sofa.svg';
-import one from '../assets/images/one.png';
-import two from '../assets/images/two.png';
-import three from '../assets/images/three.png';
-import four from '../assets/images/four.png';
-import five from '../assets/images/five.png';
+
+const couch = 'https://bridge-bharat.s3.amazonaws.com/images/home/sofa.svg';
+const one = 'https://bridge-bharat.s3.amazonaws.com/images/home/one.png';
+const two = 'https://bridge-bharat.s3.amazonaws.com/images/home/two.png';
+const three = 'https://bridge-bharat.s3.amazonaws.com/images/home/three.webp';
+const four = 'https://bridge-bharat.s3.amazonaws.com/images/home/four.png';
+const five = 'https://bridge-bharat.s3.amazonaws.com/images/home/five.png';
 
 const style = {
   position: 'absolute',
