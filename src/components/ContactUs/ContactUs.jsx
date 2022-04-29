@@ -4,6 +4,7 @@ import Sectiontwo from './SectionTwo/Sectiontwo';
 import border from './assests/leftborder.png';
 import image from './assests/imageone.png';
 import leaf from './assests/leaf.png';
+import lotus from './assests/lotus.png';
 
 import './style.scss';
 
@@ -15,6 +16,7 @@ const ContactUs = () => {
 
       <Sectionone />
           <img src= {image} alt ="contact" className="imageone" />
+          <img src={lotus} alt="lotus" className='lotus'/>
           <img src ={border} alt="contactusborder" className="imagetwo" />
         <img src ={border} alt="contactusborder" className="rightborder" />
         <img src= {image} alt ="contact" className="imagesix" />

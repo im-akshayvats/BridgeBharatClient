@@ -28,7 +28,7 @@ const Sectionone = () => {
             GET IN TOUCH
             </Typography>
           </Button>
-          <div class="animate-charcter"> Talk directly to our representative  </div>
+          <div class="animate-charcter"> Talk directly to <br/> our representative  </div>
           <img src = {WhatsAppIcon}  className="WhatsAppIcon" />
           
 
