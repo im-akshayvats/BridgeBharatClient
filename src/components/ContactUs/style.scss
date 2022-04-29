@@ -1,0 +1,52 @@
+
+.contactus_container {
+    position:relative
+  }
+  .leftborder {
+    position: absolute;
+    top:0;
+    left:0;
+  }
+
+  .rightborder {
+    position: absolute;
+    top:0;
+    right:0;
+
+  }
+  .imagetwo {
+    position:absolute;
+    top:100;
+    left:0;
+  }
+
+  .imagethree {
+    position:absolute;
+    top:100;
+    right:0;
+  }
+
+  .imagesix {
+    position:absolute;
+    right:0;
+    z-index: 2;
+    transform: rotateY(180deg);
+  }
+  .leaf {
+    position:absolute;
+    bottom:0;
+    left:0;
+  }
+  .leaftwo {
+    position:absolute;
+    bottom:0;
+    right:0;
+    transform: rotateY(180deg);
+
+  }
+
+  .imageone {
+    z-index:2;
+    position: relative;
+  }
+  
