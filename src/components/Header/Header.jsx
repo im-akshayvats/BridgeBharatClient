@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Container, Typography } from '@mui/material';
+import { Link } from 'react-router-dom'
 
 import './style.scss';
 
@@ -47,14 +48,20 @@ export default function Header() {
         <nav>
           <Typography variant='h6' className='navLink'>ABOUT US</Typography>
           <Typography variant='h6' className='navLink'>CATALOG</Typography>
-          <Typography variant='h6' className='navLink'>CONTACT US</Typography>
+          <Link to='/contact'>
+            <Typography variant='h6' className='navLink'>CONTACT US</Typography>
+          </Link>
         </nav>
-        <img src={logo} alt="BBLogo" />
+        <Link to='/'>
+          <img src={logo} alt="BBLogo" />
+        </Link>
       </Container>
         <nav className='smallNavigation' ref={smallNavigation}>
           <Typography variant='h6' className='navLink'>ABOUT US</Typography>
           <Typography variant='h6' className='navLink'>CATALOG</Typography>
-          <Typography variant='h6' className='navLink'>CONTACT US</Typography>
+          <Link to='/contact'>
+            <Typography variant='h6' className='navLink'>CONTACT US</Typography>
+          </Link>
         </nav>
     </header>
   )
