@@ -16,7 +16,7 @@ export default function SectionOne() {
         <Typography variant="h3" className="heading">
           Looking to source Indian<br />Local Products?
         </Typography>
-        <img src={cowCart} alt="" />
+        <img src={cowCart} alt="cowCart" className="cowCartImage" />
         <Typography variant='h5' className="subHeading">
           Start you journey now with us!
         </Typography>

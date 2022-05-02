@@ -14,9 +14,9 @@ export default function SectionTwo() {
     <section className="sectionTwo">
       <img src={border} alt="border" />
       <div className="upperLayer">
-        <img src={manWithFlower} alt="manWithFlower" />
-        <img src={lotus} alt="lotus" style={{ height: '100px' }}/>
-        <img src={manWithFlower} alt="manWithFlower" style={{transform: 'rotateY(180deg)'}}/>
+        <img src={manWithFlower} alt="manWithFlower" style={{ width: '33vw' }}/>
+        <img src={lotus} alt="lotus" style={{ width: '30vw' }}/>
+        <img src={manWithFlower} alt="manWithFlower" style={{transform: 'rotateY(180deg)', width: '33vw'}} />
       </div>
       <Container className="container">
         <Typography variant="h6" className="smallHeading">
