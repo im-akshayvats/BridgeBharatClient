@@ -18,9 +18,13 @@ export default function Header() {
   const header = useRef(null);
 
   useEffect(() => {
+    let scrollValue;
     if (isOpen) {
       header.current.style.height = '100vh'
       smallNavigation.current.style.height = '80vh';
+      setTimeout(() => {
+        header.current.style.position = 'sticky';
+      }, 10)
     } else {
       header.current.style.height = 'unset'
       smallNavigation.current.style.height = '0px';
@@ -32,6 +36,26 @@ export default function Header() {
           smallNavigation.current.style.height = '0px';
           setIsOpen(false);
         }
+      }
+    })
+    window.addEventListener('scroll', () => {
+      if (scrollValue < window.scrollY) {
+        console.log('scroll down');
+        let styles = {
+          "top": "0",
+          "paddingTop": "1px"
+        }
+        Object.assign(header.current.style, styles);
+        isOpen ? header.current.style.position = 'sticky' : header.current.style.position = 'initial';
+        scrollValue = window.scrollY;
+      } else {
+        console.log('scroll up')
+        let styles = {
+          "position": "sticky",
+          "top": "0"
+        }
+        Object.assign(header.current.style, styles);
+        scrollValue = window.scrollY
       }
     })
   })
