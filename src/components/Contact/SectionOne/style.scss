@@ -7,6 +7,7 @@ section.sectionOne {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 2;
     .heading {
       color: #E08B19;
       text-align: center;
