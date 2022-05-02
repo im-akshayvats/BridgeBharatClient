@@ -3,9 +3,10 @@ import React from 'react';
 import { Container, Typography, Button } from '@mui/material';
 
 import './style.scss';
-import border from '../../../assets/border.png';
-import cowCart from '../../../assets/cowCart.png';
-import whatsAppIcon from '../../../assets/whatsAppIcon.png';
+
+const border = 'https://bridge-bharat.s3.amazonaws.com/images/contact/border.png';
+const cowCart = 'https://bridge-bharat.s3.amazonaws.com/images/contact/cowCart.png';
+const whatsAppIcon = 'https://bridge-bharat.s3.amazonaws.com/images/contact/whatsAppIcon.png';
 
 export default function SectionOne() {
   return (

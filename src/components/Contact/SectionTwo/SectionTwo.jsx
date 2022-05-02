@@ -3,10 +3,11 @@ import React from 'react';
 import { Container, Typography, Button } from '@mui/material';
 
 import './style.scss';
-import border from '../../../assets/border.png';
-import manWithFlower from '../../../assets/manWithFlower.png';
-import lotus from '../../../assets/lotus.png';
-import leavesAndCow from '../../../assets/leavesAndCow.png';
+
+const border = 'https://bridge-bharat.s3.amazonaws.com/images/contact/border.png';
+const manWithFlower = 'https://bridge-bharat.s3.amazonaws.com/images/contact/manWithFlower.png';
+const lotus = 'https://bridge-bharat.s3.amazonaws.com/images/contact/lotus.png';
+const leavesAndCow = 'https://bridge-bharat.s3.amazonaws.com/images/contact/leavesAndCow.png';
 
 export default function SectionTwo() {
   return (
