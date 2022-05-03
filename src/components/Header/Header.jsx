@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import './style.scss';
 
-const logo = 'https://bridge-bharat.s3.amazonaws.com/images/global/logo.svg';
+const logo = 'https://d2dm1r7c3wtyk.cloudfront.net/images/global/logo.svg';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);

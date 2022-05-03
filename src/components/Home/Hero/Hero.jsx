@@ -3,7 +3,7 @@ import { Typography, Box, Button, Container } from '@mui/material';
 
 import './style.scss';
 
-const banner = 'https://bridge-bharat.s3.amazonaws.com/images/home/banner.svg';
+const banner = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/banner.svg';
 
 export default function Hero() {
   return (

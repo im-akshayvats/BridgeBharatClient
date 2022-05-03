@@ -3,9 +3,9 @@ import { Box, Typography } from '@mui/material';
 
 import './style.scss';
 
-const authorImage = 'https://bridge-bharat.s3.amazonaws.com/images/home/reviewAuthor.png';
-const upQuote = 'https://bridge-bharat.s3.amazonaws.com/images/home/upQuote.png';
-const downQuote = 'https://bridge-bharat.s3.amazonaws.com/images/home/downQuote.png';
+const authorImage = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/reviewAuthor.png';
+const upQuote = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/upQuote.png';
+const downQuote = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/downQuote.png';
 
 export default function Card({review, author}) {
   return (

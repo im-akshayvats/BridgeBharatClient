@@ -4,12 +4,12 @@ import { ExpandMore } from '@mui/icons-material';
 
 import './style.scss';
 
-const couch = 'https://bridge-bharat.s3.amazonaws.com/images/home/sofa.svg';
-const one = 'https://bridge-bharat.s3.amazonaws.com/images/home/one.png';
-const two = 'https://bridge-bharat.s3.amazonaws.com/images/home/two.png';
-const three = 'https://bridge-bharat.s3.amazonaws.com/images/home/three.webp';
-const four = 'https://bridge-bharat.s3.amazonaws.com/images/home/four.png';
-const five = 'https://bridge-bharat.s3.amazonaws.com/images/home/five.png';
+const couch = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/sofa.svg';
+const one = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/one.png';
+const two = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/two.png';
+const three = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/three.webp';
+const four = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/four.png';
+const five = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/five.png';
 
 const style = {
   position: 'absolute',

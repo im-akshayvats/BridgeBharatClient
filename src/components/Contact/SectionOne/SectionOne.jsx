@@ -4,9 +4,9 @@ import { Container, Typography, Button } from '@mui/material';
 
 import './style.scss';
 
-const border = 'https://bridge-bharat.s3.amazonaws.com/images/contact/border.png';
-const cowCart = 'https://bridge-bharat.s3.amazonaws.com/images/contact/cowCart.png';
-const whatsAppIcon = 'https://bridge-bharat.s3.amazonaws.com/images/contact/whatsAppIcon.png';
+const border = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/border.png';
+const cowCart = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/cowCart.png';
+const whatsAppIcon = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/whatsAppIcon.png';
 
 export default function SectionOne() {
   return (

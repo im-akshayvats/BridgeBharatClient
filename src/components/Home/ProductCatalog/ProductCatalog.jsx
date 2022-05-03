@@ -6,11 +6,11 @@ import Product from './Product/Product';
 
 import './style.scss';
 
-const candleStands = 'https://bridge-bharat.s3.amazonaws.com/images/home/candleStands.svg';
-const lamps = 'https://bridge-bharat.s3.amazonaws.com/images/home/lamps.svg';
-const vases = 'https://bridge-bharat.s3.amazonaws.com/images/home/vases.svg';
-const plates = 'https://bridge-bharat.s3.amazonaws.com/images/home/plates.svg';
-const mirror = 'https://bridge-bharat.s3.amazonaws.com/images/home/mirror.svg';
+const candleStands = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/candleStands.svg';
+const lamps = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/lamps.svg';
+const vases = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/vases.svg';
+const plates = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/plates.svg';
+const mirror = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/mirror.svg';
 
 export default function ProductCatalog() {
   const [expanded, setExpanded] = useState(false);

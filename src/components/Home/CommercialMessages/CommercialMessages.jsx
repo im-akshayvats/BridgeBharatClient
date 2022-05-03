@@ -4,9 +4,9 @@ import MessageTemplate from './MessageTemplate/MessageTemplate';
 
 import './style.scss';
 
-const endToEnd = 'https://bridge-bharat.s3.amazonaws.com/images/home/endToEndImage.png';
-const customization = 'https://bridge-bharat.s3.amazonaws.com/images/home/customization.gif';
-const marketing = 'https://bridge-bharat.s3.amazonaws.com/images/home/marketing.gif';
+const endToEnd = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/endToEndImage.png';
+const customization = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/customization.gif';
+const marketing = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/marketing.gif';
 
 export default function CommercialMessages() {
   return (

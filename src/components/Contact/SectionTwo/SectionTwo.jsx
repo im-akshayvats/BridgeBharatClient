@@ -4,10 +4,10 @@ import { Container, Typography, Button } from '@mui/material';
 
 import './style.scss';
 
-const border = 'https://bridge-bharat.s3.amazonaws.com/images/contact/border.png';
-const manWithFlower = 'https://bridge-bharat.s3.amazonaws.com/images/contact/manWithFlower.png';
-const lotus = 'https://bridge-bharat.s3.amazonaws.com/images/contact/lotus.png';
-const leavesAndCow = 'https://bridge-bharat.s3.amazonaws.com/images/contact/leavesAndCow.png';
+const border = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/border.png';
+const manWithFlower = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/manWithFlower.png';
+const lotus = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/lotus.png';
+const leavesAndCow = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/leavesAndCow.png';
 
 export default function SectionTwo() {
   return (

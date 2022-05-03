@@ -3,9 +3,9 @@ import { Box, Container, Typography } from '@mui/material';
 
 import './style.scss';
 
-const blueLogo = 'https://bridge-bharat.s3.amazonaws.com/images/home/blue.svg';
-const orangeLogo = 'https://bridge-bharat.s3.amazonaws.com/images/home/orange.svg'
-const yellowLogo = 'https://bridge-bharat.s3.amazonaws.com/images/home/yellow.svg';
+const blueLogo = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/blue.svg';
+const orangeLogo = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/orange.svg'
+const yellowLogo = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/yellow.svg';
 
 export default function Features() {
   return (
