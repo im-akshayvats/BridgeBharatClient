@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './style.scss';
+
 import Hero from './Hero/Hero';
 import Introduciton from './Introduction/Introduction';
 import PaintingCatalog from './PaintingCatalog/PaintingCatalog';

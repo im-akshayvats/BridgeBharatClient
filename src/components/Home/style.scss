@@ -1,0 +1,13 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  #root {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    .section {
+      scroll-snap-align: center;
+    }
+  }
+}

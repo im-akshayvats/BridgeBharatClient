@@ -23,7 +23,7 @@ export default function Solutions() {
     cssEase: "linear"
   };
   return (
-    <section className="solutions">
+    <section className="solutions section">
       <Slider {...settings}>
         <Slide
           image={sustainable}

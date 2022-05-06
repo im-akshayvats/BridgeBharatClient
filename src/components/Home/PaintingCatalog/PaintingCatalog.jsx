@@ -129,7 +129,7 @@ export default function PaintingCatalog() {
   });
 
   return (
-    <section className="pictureCatalog">
+    <section className="pictureCatalog section">
       <Container className='catalogContainer'>
         <Modal
           open={open}

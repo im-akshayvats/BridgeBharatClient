@@ -61,6 +61,9 @@ export default function Header() {
   return (
     <header ref={header}>
       <Container className="navBarContainer">
+        <Link to='/'>
+          <img src={logo} alt="BBLogo" />
+        </Link>
         <div className="hamburger" onClick={handleClick}>
           <div className="layer"></div>
           <div className="layer"></div>
@@ -74,9 +77,6 @@ export default function Header() {
             <Typography variant='p' className='navLink'>CONTACT US</Typography>
           </Link>
         </nav>
-        <Link to='/'>
-          <img src={logo} alt="BBLogo" />
-        </Link>
       </Container>
         <nav className='smallNavigation' ref={smallNavigation}>
           <Typography variant='h6' className='navLink'>ABOUT US</Typography>

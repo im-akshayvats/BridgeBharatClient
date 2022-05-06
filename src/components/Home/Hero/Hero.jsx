@@ -7,7 +7,7 @@ const banner = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/banner.svg';
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero section">
       <Container className='heroContainer'>
         <img src={banner} alt="Banner" />
         <Typography variant='h3' className='heading'>

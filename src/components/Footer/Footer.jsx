@@ -7,7 +7,7 @@ import './style.scss'
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="section">
       <Container maxWidth='xl' className='footerContainer'>
         <Typography variant='h4' mt={'80px'} className='heading'>
           Dedicated to the strength and resilience of<br />the world’s small businesses

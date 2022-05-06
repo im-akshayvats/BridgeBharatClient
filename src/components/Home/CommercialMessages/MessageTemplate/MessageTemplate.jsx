@@ -5,7 +5,7 @@ import './style.scss'
 
 export default function MessageTemplate({heading, description, highlightedDescription, video, image}) {
   return (
-    <section className="message">
+    <section className="message section">
       <Container className='container'>
         <Box className='content'>
           <Typography variant='h1' className='heading'>

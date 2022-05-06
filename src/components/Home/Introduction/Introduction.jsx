@@ -9,7 +9,7 @@ export default function Introduction() {
   
 
   return (
-    <section className="introduction">
+    <section className="introduction section">
       <Canvas />
       <Heading />
     </section>

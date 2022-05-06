@@ -9,7 +9,7 @@ const yellowLogo = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/yellow.svg'
 
 export default function Features() {
   return (
-    <section className="features">
+    <section className="features section">
       <Container>
         <Box className='featuresBox'>
           <div className="feature">

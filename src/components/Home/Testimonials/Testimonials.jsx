@@ -30,7 +30,7 @@ export default function Testimonials() {
     cssEase: "linear"
   };
   return (
-    <section className="testimonials">
+    <section className="testimonials section">
       <Slider {...settings}>
         <Card
           review={"We purchased two Phadd 'Tree of Life' paintings from Bridge Bharat. I'm absolutely in love with both of them. Great going, guys! "}

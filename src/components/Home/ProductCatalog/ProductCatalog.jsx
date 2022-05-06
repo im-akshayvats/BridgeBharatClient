@@ -36,7 +36,7 @@ export default function ProductCatalog() {
   })
 
   return (
-    <section className="productCatalog">
+    <section className="productCatalog section">
       <Container maxWidth='xl' className='productsContainer'>
         <Typography variant='h4' className='heading'>
           Handcrafted Products from the Heart of Indian Artisan Community
