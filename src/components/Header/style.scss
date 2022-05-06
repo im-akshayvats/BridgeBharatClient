@@ -1,7 +1,10 @@
 header {
   height: unset;
+  position: absolute;
+  top: 0;
   z-index: 3;
   background-color: #193166;
+  width: 100%;
   div.navBarContainer {
     display: flex;
     justify-content: space-between;

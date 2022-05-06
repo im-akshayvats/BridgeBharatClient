@@ -23,7 +23,7 @@ export default function Header() {
       header.current.style.height = '100vh'
       smallNavigation.current.style.height = '80vh';
       setTimeout(() => {
-        header.current.style.position = 'sticky';
+        header.current.style.position = 'fixed';
       }, 10)
     } else {
       header.current.style.height = 'unset'
@@ -40,18 +40,16 @@ export default function Header() {
     })
     window.addEventListener('scroll', () => {
       if (scrollValue < window.scrollY) {
-        console.log('scroll down');
         let styles = {
           "top": "0",
           "paddingTop": "1px"
         }
         Object.assign(header.current.style, styles);
-        isOpen ? header.current.style.position = 'sticky' : header.current.style.position = 'initial';
+        isOpen ? header.current.style.position = 'fixed' : header.current.style.position = 'absolute';
         scrollValue = window.scrollY;
       } else {
-        console.log('scroll up')
         let styles = {
-          "position": "sticky",
+          "position": "fixed",
           "top": "0"
         }
         Object.assign(header.current.style, styles);
