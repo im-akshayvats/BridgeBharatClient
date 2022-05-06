@@ -33,7 +33,7 @@ class Heading extends Component {
         this.setState({opacity: 1});
         this.beginChange();
       }, 1000)
-    }, 5000);
+    }, 2500);
   }
 
   componentDidMount() {
