@@ -3,12 +3,13 @@
     font-family: Cormorant Garamond !important;
     color: white;
   }
-  height: 675px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-top: 70px;
   .slideBackground {
     position: absolute;
     height: 100%;
