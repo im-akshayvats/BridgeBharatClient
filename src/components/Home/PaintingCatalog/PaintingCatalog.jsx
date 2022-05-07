@@ -160,7 +160,7 @@ export default function PaintingCatalog() {
             </div>
           </Box>
         </Modal>
-        <Typography variant='h4' className='catalogHeading'>
+        <Typography variant='h5' className='catalogHeading'>
           Indian Traditional Art from the Masters<br />made with Natural Pigments
         </Typography>
         <Box className='paintingsContainer' ref={paintingContainer}>

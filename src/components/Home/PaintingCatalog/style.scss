@@ -1,5 +1,7 @@
 section.pictureCatalog {
   overflow: hidden;
+  height: 100vh;
+  padding-top: 70px;
   .catalogContainer {
     display: flex;
     flex-direction: column;
@@ -11,22 +13,26 @@ section.pictureCatalog {
       text-align: center;
       color: #786D63;
       margin-bottom: 0.5em;
+      line-height: 1.25em;
     }
     .paintingsContainer {
       width: 100%;
+      height: 335px !important;
       display: flex;
       justify-content: center;
+      position: relative;
+      top: -2.5em;
       .imageContainer {
         .paintingImageContainer {
           position: relative;
           transition: 250ms ease-in-out all;
           img {
-            border: 10px solid black;
+            border: 5px solid black;
             cursor: pointer;
             transition: 250ms ease-in-out all;
             margin: 10px;
             position: relative;
-            padding: 13px;
+            padding: 6px;
           }
           img::after {
             content: 'Name';
@@ -38,7 +44,7 @@ section.pictureCatalog {
           .paintingMiniInfo {
             display: none;
             position: absolute;
-            right: -87px;
+            right: -94px;
             top: 2em;
             .name {
               width: 110px;
@@ -90,25 +96,26 @@ section.pictureCatalog {
     }
     .imageButtonBox {
       background-color: #FCF6F0;
-      height: 309px;
+      height: 150px;
       width: 100vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       position: relative;
-      margin-top: 12em;
       img {
         position: absolute;
-        top: -10em;
+        top: -5em;
+        width: 570px;
       }
       .viewMoreButton {
-        color: #193166;
-        border-color: #193166;
-        border-width: 2px;
+        color: white;
+        border: none;
+        border-radius: 0;
+        background-color: #193166;
         font-family: 'Josefin Sans', sans-serif;
         position: absolute;
-        bottom: 3em;
+        bottom: 0.75em;
       }
     }
     .viewMoreSmallButton {
