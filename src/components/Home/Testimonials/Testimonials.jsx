@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import './style.scss';
 import Card from './Card/Card';
 
+import Partners from './Partners/Partners';
+
 export default function Testimonials() {
   const [slides , setSlides] = useState(2);
 
@@ -31,6 +33,7 @@ export default function Testimonials() {
   };
   return (
     <section className="testimonials section">
+      <Partners />
       <Slider {...settings}>
         <Card
           review={"We purchased two Phadd 'Tree of Life' paintings from Bridge Bharat. I'm absolutely in love with both of them. Great going, guys! "}

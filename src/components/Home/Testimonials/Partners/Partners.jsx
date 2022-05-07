@@ -37,7 +37,7 @@ export default function Partners() {
     cssEase: "linear"
   };
   return (
-    <section className="partners section">
+    <section className="partners">
         <Slider {...settings}>
           <div>
             <Box className='imageContainer'>
