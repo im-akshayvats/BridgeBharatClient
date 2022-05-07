@@ -1,25 +1,28 @@
 .message {
-  padding: 2em 0;
+  padding: 70px 0;
+  height: 100vh;
   .container {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
     .content {
+      width: 40%;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      flex-direction: column;
       .heading {
-        width: 50%;
         font-family: Cormorant Garamond;
-        color: #786D63;
+        color: #193166;
+        margin-bottom: 72px;
       }
       .description {
-        width: 40%;
         font-family: Josefin Sans;
-        span.fontOrange {
-          color: #ce4c16;
-        }
+        color: #786D63;
       }
     }
     .videoBox {
-      width: 100%;
+      width: 50%;
       video {
         width: 100%;
       }
