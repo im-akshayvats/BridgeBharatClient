@@ -2,11 +2,16 @@ div.productCard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5em 0;
   .imagePlaceHolder {
     height: 250px;
     width: 250px;
     background-color: #C4C4C4;
+  }
+  .productImage {
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+    object-position: center;
   }
   .name {
     margin-top: 1.5em;

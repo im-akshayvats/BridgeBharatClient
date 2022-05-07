@@ -1,4 +1,9 @@
 section.productCatalog {
+  padding-top: 60px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   .productsContainer {
     display: flex;
     flex-direction: column;
@@ -6,11 +11,13 @@ section.productCatalog {
     .heading {
       font-family: Cormorant Garamond;
       color: #786D63;
+      margin-bottom: 1em;
+      text-align: center;
     }
     .products {
       width: 100%;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       transition: 750ms ease-in-out all;
     }
     .toggleButton {
@@ -18,8 +25,10 @@ section.productCatalog {
       display: none;
     }
     .viewMoreButton {
-      color: #193166;
-      border-color: #193166;
+      background-color: #193166;
+      color: white;
+      border: none;
+      border-radius: 0;
     }
   }
 }

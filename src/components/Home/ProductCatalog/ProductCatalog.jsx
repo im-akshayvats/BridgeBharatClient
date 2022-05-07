@@ -6,6 +6,8 @@ import Product from './Product/Product';
 
 import './style.scss';
 
+import Features from './Features/Features';
+
 const candleStands = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/candleStands.svg';
 const lamps = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/lamps.svg';
 const vases = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/vases.svg';
@@ -22,22 +24,25 @@ export default function ProductCatalog() {
     }
     return setExpanded(true);
   }
+  const productCatalog = useRef(null);
   const productList = useRef(null);
   const toggleButton = useRef(null);
 
   useEffect(() => {
     if (expanded) {
+      productCatalog.current.style.height = '2440px';
       productList.current.style.height = '2070px';
       toggleButton.current.style.transform = 'rotate(180deg)'
     } else {
-      productList.current.style.height = '440px';
+      productCatalog.current.style.height = '100vh';
+      productList.current.style.height = '320px';
       toggleButton.current.style.transform = 'rotate(0deg)'
     }
   })
 
   return (
-    <section className="productCatalog section">
-      <Container maxWidth='xl' className='productsContainer'>
+    <section ref={productCatalog} className="productCatalog section">
+      <Container className='productsContainer'>
         <Typography variant='h4' className='heading'>
           Handcrafted Products from the Heart of Indian Artisan Community
         </Typography>
@@ -53,6 +58,7 @@ export default function ProductCatalog() {
         </div>
         <Button variant='outlined' className='viewMoreButton'>explore</Button>
       </Container>
+      <Features />
     </section>
   )
 }
