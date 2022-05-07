@@ -43,7 +43,7 @@ export default function ProductCatalog() {
   return (
     <section ref={productCatalog} className="productCatalog section">
       <Container className='productsContainer'>
-        <Typography variant='h4' className='heading'>
+        <Typography variant='h5' className='heading'>
           Handcrafted Products from the Heart of Indian Artisan Community
         </Typography>
         <div className='products' ref={productList}>

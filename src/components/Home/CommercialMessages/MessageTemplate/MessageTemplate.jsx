@@ -8,7 +8,7 @@ export default function MessageTemplate({heading, description, highlightedDescri
     <section className="message section">
       <Container className='container'>
         <Box className='content'>
-          <Typography variant='h1' className='heading'>
+          <Typography variant='h2' className='heading'>
             {heading}
           </Typography>
           <Typography variant='h5' className='description'>
