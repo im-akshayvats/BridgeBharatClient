@@ -10,6 +10,9 @@ export default function Hero() {
   return (
     <section className="hero section">
       <Container className='heroContainer'>
+        <Typography variant='h4' className='smallHeading'>
+          YOUR<br/><span className='desi'>DESI</span><br/>WHOLESALE<br/>PARTNER
+        </Typography>
         <Box className='heroBannerBox'>
           <div className='heroBannerOne'>
             <img src={heroOne} alt="banner" />
