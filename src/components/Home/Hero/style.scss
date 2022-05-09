@@ -5,22 +5,40 @@ section.hero {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 60px;
-    img {
-      width: 100%;
-      height: 55vh;
-      object-fit: cover;
-    }
-    .heading {
-      margin: 0.35em 0;
-      letter-spacing: 0.2em;
-      color: #193166;
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: 700;
-      .desi {
-        color: #ce4c16;
-        font-style: italic;
+    .heroBannerBox {
+      display: flex;
+      justify-content: space-between;
+      div {
+        width: 33%;
+        height: 60vh;
+        overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      div.heroBannerHeading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FCF6F0;
+        .heading {
+          letter-spacing: 0.2em;
+          line-height: 2.5em;
+          color: #193166;
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 2.5vw;
+          .desi {
+            color: #ce4c16;
+            font-style: italic;
+            font-size: 3em;
+            font-family: Cormorant Garamond;
+          }
+        }
       }
     }
     .subHeading {
@@ -28,12 +46,13 @@ section.hero {
       letter-spacing: 0.2em;
       line-height: 40px;
       color: #193166;
+      margin-top: 1em;
     }
     .buttonContainer {
       * {
         color: white;
       }
-      margin: 1em 0;
+      margin-top: 1em;
       padding: 0 20%;
       display: flex;
       justify-content: space-evenly;
