@@ -71,7 +71,9 @@ export default function Header() {
           <div className="layer"></div>
         </div>
         <nav>
+         <Link to='/about'>
           <Typography variant='p' className='navLink'>ABOUT US</Typography>
+          </Link>
           <Typography variant='p' className='navLink'>CATALOG</Typography>
           <Link to='/contact'>
             <Typography variant='p' className='navLink'>CONTACT US</Typography>

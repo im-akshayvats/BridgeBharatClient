@@ -10,7 +10,7 @@ const whatsAppIcon = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/whatsA
 
 export default function SectionOne() {
   return (
-    <section className="sectionOne">
+    <section className="sectionOne section">
       <img src={border} alt="cowCart" />
       <Container className="container">
         <Typography variant="h3" className="heading">
