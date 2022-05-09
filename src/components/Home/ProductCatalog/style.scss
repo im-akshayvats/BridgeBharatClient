@@ -1,9 +1,9 @@
 section.productCatalog {
-  padding-top: 60px;
+  padding-top: 70px;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   .productsContainer {
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ section.productCatalog {
       transition: 750ms ease-in-out all;
     }
     .toggleButton {
-      margin-bottom: 2em;
+      margin-bottom: 1em;
       display: none;
     }
     .viewMoreButton {
@@ -44,7 +44,6 @@ section.productCatalog {
         flex-direction: column;
         justify-content: flex-start;
         overflow: hidden;
-        padding: 2em 0;
       }
       .toggleButton {
         display: initial;
