@@ -1,104 +1,75 @@
 footer {
-  background-color: #E08B19;
+  background-color: #193166;
+  padding-top: 100px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
   * {
     color: white;
     font-family: Cormorant Garamond !important;
   }
-  .footerContainer {
+  .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    .copyright {
-      color: #e5e5e5;
-      font-family: 'Josefin Sans', sans-serif !important;
-    }
-    input {
-      width: 300px;
-      padding: 10px 35px;
-      font-size: 16px;
-      color: gray;
-      outline: none;
-      border: none;
-      border-radius: 5px;
-      margin-bottom: 40px;
-      font-family: Segoe UI !important;
-    }
-    div.navigationLinks {
-      margin-bottom: 50px;
-      .navLink {
-        text-decoration: none;
-        font-family: 'Josefin Sans', sans-serif !important;
-        font-size: 19px;
-      }
-      .navLink:not(:last-child) {
-        margin-right: 5em;
-      }
-    }
-    .otherLinks {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 40px;
-      font-size: 12px;
-      * {
-        font-family: 'Josefin Sans', sans-serif !important;
-        cursor: pointer;
-      }
-      .socialMediaHandles {
-        width: 120px;
-        display: flex;
-        justify-content: space-between;
-      }
-      .tc {
-        border-bottom: 1px solid white;
-      }
-      .pp {
-        border-bottom: 1px solid white;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  footer {
-    .footerContainer {
+    justify-content: space-between;
+    z-index: 2;
+    div.firstHalf {
+      width: 50%;
       .heading {
-        font-size: 5vw;
+        width: 80%;
+      }
+      .socialMedia {
+        margin: 1em 0;
+        .icon:not(:last-child) {
+          margin-right: 0.5em;
+        }
       }
       .copyright {
-        font-size: 3vw;
+        font-family: Josefin Sans !important;
+        font-size: 0.8em;
+        font-weight: lighter;
       }
-      input {
-        width: 80vw;
-        font-size: 12px;
+    }
+    div.secondHalf {
+      width: 40%;
+      .searchEngine {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        background-color: #fff;
+        padding: 5px 10px;
+        * {
+          color: #193166;
+        }
+        input {
+          border: none;
+          outline: none;
+          width: 20vw;
+          font-size: 1em;
+        }
       }
       .navigationLinks {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        width: fit-content;
         .navLink {
-          margin-right: 0 !important;
-          font-weight: lighter;
-          font-size: 4vw !important;
+          text-decoration: none;
+          font-size: 1.2em;
+          font-family: Josefin Sans !important;
+          margin-bottom: 1.5em;
         }
-        .navLink:not(:last-child) {
-          margin-bottom: 15px;
+        .otherLink {
+          font-size: 0.8em !important;
+          font-family: Josefin Sans !important;
+          margin-bottom: 1.5em;
         }
-      }
-      .otherLinks {
-        .socialMediaHandles {
-          width: 20vw;
-          .socialIcon {
-            width: 4vw;
-          }
-        }
-        .tc, .pp {
-          font-size: 2vw;
-          line-height: 3em;
-        }
+
       }
     }
+  }
+  img {
+    position: absolute;
+    bottom: -5em;
+    width: 100%;
   }
 }

@@ -1,56 +1,70 @@
 import React from 'react';
 import { Container, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import { Instagram, Facebook, LinkedIn, Twitter } from '@mui/icons-material';
+import { Instagram, Facebook, LinkedIn, Twitter, Search } from '@mui/icons-material';
 
-import './style.scss'
+import './style.scss';
+
+import footerImage from '../../assets/footerImage.svg';
 
 export default function Footer() {
   return (
     <footer className="section">
-      <Container maxWidth='xl' className='footerContainer'>
-        <Typography variant='h4' mt={'80px'} className='heading'>
-          Dedicated to the strength and resilience of<br />the world’s small businesses
-        </Typography>
-        <Typography className='copyright' my={'40px'}>
-          ©BRIDGE BHARAT 2022
-        </Typography>
-        <input type="text" placeholder='Product and brand search....' />
-        <div className="navigationLinks">
-          <NavLink
-            to={`/`}
-            className='navLink'
-          >
-            ABOUT US
-          </NavLink>
-          <NavLink
-            to={`/`}
-            className='navLink'
-          >
-            JOIN THE WAITLIST
-          </NavLink>
-          <NavLink
-            to={`/`}
-            className='navLink'
-          >
-            EXPLORE
-          </NavLink>
+      <Container className="container">
+        <div className="firstHalf">
+          <Typography variant="h3" className="heading">
+            Dedicated to the strength and resilience of  the world’s small businesses
+          </Typography>
+          <div className="socialMedia">
+            <Instagram className="icon"/>
+            <Facebook className="icon"/>
+            <LinkedIn className="icon"/>
+            <Twitter className="icon"/>
+          </div>
+          <Typography variant="p" className="copyright">
+            ©BRIDGE BHARAT 2022
+          </Typography>
         </div>
-        <div className="otherLinks">
-          <div className="tc">
-            TERMS & CONDITIONS
+        <div className="secondHalf">
+          <div className="searchEngine">
+            <input type="text" placeholder="Product and brand search...." />
+            <Search />
           </div>
-          <div className="socialMediaHandles">
-            <Instagram className='socialIcon'/>
-            <Facebook className='socialIcon'/>
-            <LinkedIn className='socialIcon'/>
-            <Twitter className='socialIcon'/>
-          </div>
-          <div className="pp">
-            PRIVACY & POLICY
+          <div className="navigationLinks">
+            <NavLink
+              to={`/`}
+              className='navLink'
+            >
+              ABOUT US
+            </NavLink>
+            <NavLink
+              to={`/contact`}
+              className='navLink'
+            >
+              CONTACT US
+            </NavLink>
+            <NavLink
+              to={`/`}
+              className='navLink'
+            >
+              EXPLORE
+            </NavLink>
+            <NavLink
+              to={`/`}
+              className='term otherLink'
+            >
+              TERMS & CONDITIONS
+            </NavLink>
+            <NavLink
+              to={`/`}
+              className='privacy otherLink'
+            >
+              PRIVACY POLICY
+            </NavLink>
           </div>
         </div>
       </Container>
+      <img src={footerImage} alt="footerImage" />
     </footer>
   )
 }
