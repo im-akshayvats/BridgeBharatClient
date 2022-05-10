@@ -1,0 +1,29 @@
+.storyTemplateSection {
+  height: 100vh;
+  padding-top: 70px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    .imageContainer {
+      height: 90%;
+      img {
+        height: 100%;
+      }
+    }
+    .contentContainer {
+      width: 50%;
+      .heading {
+        font-family: Cormorant Garamond;
+        margin-bottom: 0.5em;
+        color: #786D63;
+      }
+      .story {
+        font-family: Josefin Sans;
+        color: #786D63;
+        width: 80%;
+      }
+    }
+  }
+}
