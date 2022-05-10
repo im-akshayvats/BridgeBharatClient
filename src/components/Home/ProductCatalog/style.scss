@@ -3,7 +3,7 @@ section.productCatalog {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   .productsContainer {
     display: flex;
     flex-direction: column;
@@ -15,6 +15,7 @@ section.productCatalog {
       text-align: center;
     }
     .products {
+      height: 320px !important;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -29,6 +30,7 @@ section.productCatalog {
       color: white;
       border: none;
       border-radius: 0;
+      font-family: Josefin Sans;
     }
   }
 }
@@ -44,6 +46,7 @@ section.productCatalog {
         flex-direction: column;
         justify-content: flex-start;
         overflow: hidden;
+        height: 260px !important;
       }
       .toggleButton {
         display: initial;
