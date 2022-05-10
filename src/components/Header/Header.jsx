@@ -71,8 +71,8 @@ export default function Header() {
           <div className="layer"></div>
         </div>
         <nav>
-         <Link to='/about'>
-          <Typography variant='p' className='navLink'>ABOUT US</Typography>
+          <Link to='/about'>
+            <Typography variant='p' className='navLink'>ABOUT US</Typography>
           </Link>
           <Typography variant='p' className='navLink'>CATALOG</Typography>
           <Link to='/contact'>
@@ -81,7 +81,9 @@ export default function Header() {
         </nav>
       </Container>
         <nav className='smallNavigation' ref={smallNavigation}>
-          <Typography variant='h6' className='navLink'>ABOUT US</Typography>
+          <Link to='/about'>
+            <Typography variant='p' className='navLink'>ABOUT US</Typography>
+          </Link>
           <Typography variant='h6' className='navLink'>CATALOG</Typography>
           <Link to='/contact'>
             <Typography variant='h6' className='navLink'>CONTACT US</Typography>

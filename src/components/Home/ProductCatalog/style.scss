@@ -1,9 +1,9 @@
 section.productCatalog {
-  padding-top: 60px;
+  padding-top: 70px;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   .productsContainer {
     display: flex;
     flex-direction: column;
@@ -15,13 +15,14 @@ section.productCatalog {
       text-align: center;
     }
     .products {
+      height: 320px !important;
       width: 100%;
       display: flex;
       justify-content: space-between;
       transition: 750ms ease-in-out all;
     }
     .toggleButton {
-      margin-bottom: 2em;
+      margin-bottom: 1em;
       display: none;
     }
     .viewMoreButton {
@@ -29,6 +30,7 @@ section.productCatalog {
       color: white;
       border: none;
       border-radius: 0;
+      font-family: Josefin Sans;
     }
   }
 }
@@ -44,7 +46,7 @@ section.productCatalog {
         flex-direction: column;
         justify-content: flex-start;
         overflow: hidden;
-        padding: 2em 0;
+        height: 260px !important;
       }
       .toggleButton {
         display: initial;

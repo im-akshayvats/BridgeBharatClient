@@ -28,15 +28,16 @@
 }
 
 @media only screen and (max-width: 720px) {
-  section.features {
-    padding: 2em 0 4em 0;
+  .container {
+    margin: 3em 0 0 0;
     .featuresBox {
-      overflow-x: scroll;
-      padding: 2em 0;
       .feature {
-        min-width: 30vw;
+        width: 15vw;
+        img {
+          width: 100%;
+        }
         .featureName {
-          font-size: 3vw;
+          font-size: 2.5vw;
         }
       }
     }

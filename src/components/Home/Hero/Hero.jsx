@@ -3,16 +3,29 @@ import { Typography, Box, Button, Container } from '@mui/material';
 
 import './style.scss';
 
-const banner = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/banner.svg';
+// import heroOne from '../../../assets/heroOne.png';
+// import heroTwo from '../../../assets/heroTwo.png';
 
 export default function Hero() {
   return (
     <section className="hero section">
       <Container className='heroContainer'>
-        <img src={banner} alt="Banner" />
-        <Typography variant='h3' className='heading'>
-          YOUR <span className='desi'>DESI</span> WHOLESALE PARTNER
+        <Typography variant='h4' className='smallHeading'>
+          YOUR<br/><span className='desi'>DESI</span><br/>WHOLESALE<br/>PARTNER
         </Typography>
+        <Box className='heroBannerBox'>
+          <div className='heroBannerOne'>
+            {/* <img src={heroOne} alt="banner" /> */}
+          </div>
+          <div className='heroBannerHeading'>
+            <Typography variant='h4' className='heading'>
+              YOUR<br/><span className='desi'>DESI</span><br/>WHOLESALE<br/>PARTNER
+            </Typography>
+          </div>
+          <div className='heroBannerTwo'>
+            {/* <img src={heroTwo} alt="banner" /> */}
+          </div>
+        </Box>
         <Typography variant='h6' className='subHeading'>
           INDIAN HANDCRAFTED PRODUCTS FROM 4000+ ARTISANAL COMMUNITIES
         </Typography>

@@ -30,12 +30,12 @@ export default function ProductCatalog() {
 
   useEffect(() => {
     if (expanded) {
-      productCatalog.current.style.height = '2440px';
-      productList.current.style.height = '2070px';
+      productCatalog.current.style.height = '1880px';
+      productList.current.style.height = '1460px';
       toggleButton.current.style.transform = 'rotate(180deg)'
     } else {
       productCatalog.current.style.height = '100vh';
-      productList.current.style.height = '320px';
+      productList.current.style.height = '260px';
       toggleButton.current.style.transform = 'rotate(0deg)'
     }
   })

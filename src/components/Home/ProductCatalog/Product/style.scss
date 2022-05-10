@@ -23,7 +23,8 @@ div.productCard {
 @media only screen and (max-width: 720px) {
   div.productCard {
     img {
-      height: unset !important;
+      height: 200px !important;
+      width: 160px !important;
     }
     .name {
       font-size: 1em;
