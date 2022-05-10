@@ -1,0 +1,26 @@
+.teamSection {
+  height: 100vh;
+  padding-top: 70px;
+  background-color: #FCF6F0;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .title {
+      margin-bottom: 2em;
+      .text {
+        font-family: Cormorant Garamond;
+        color: #786D63;
+      }
+    }
+    div.membersContainer {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  }
+}
