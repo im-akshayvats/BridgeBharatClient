@@ -14,9 +14,9 @@ export default function SectionTwo() {
     <section className="sectionTwo section">
       <img src={border} alt="border" />
       <div className="upperLayer">
-        <img src={manWithFlower} alt="manWithFlower" style={{ width: '33vw' }}/>
-        <img src={lotus} alt="lotus" style={{ width: '30vw' }}/>
-        <img src={manWithFlower} alt="manWithFlower" style={{transform: 'rotateY(180deg)', width: '33vw'}} />
+        <img src={manWithFlower} alt="manWithFlower" className="manWithFlower" />
+        <img src={lotus} alt="lotus" className="lotus" />
+        <img src={manWithFlower} alt="manWithFlower" style={{transform: 'rotateY(180deg)'}} className="manWithFlower" />
       </div>
       <Container className="container">
         <Typography variant="h6" className="smallHeading">
@@ -29,7 +29,7 @@ export default function SectionTwo() {
           EMAIL US NOW
         </Button>
       </Container>
-      <div className="bottonLeaves">
+      <div className="bottomLeaves">
         <img src={leavesAndCow} alt="cowInLeaves" height={450}/>
         <img src={leavesAndCow} alt="cowInLeaves" style={{ transform: 'rotateY(180deg)'}} height={450}/>
       </div>
