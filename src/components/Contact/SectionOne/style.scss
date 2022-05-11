@@ -1,8 +1,9 @@
 section.sectionOne {
-  background-color: #FCF6F0;
+  background-color: #F7F3F0;
   display: flex;
   height: 100vh;
   padding-top: 60px;
+  position: relative;
   .container {
     display: flex;
     flex-direction: column;
@@ -14,14 +15,16 @@ section.sectionOne {
       text-align: center;
       font-family: Cormorant;
     }
-    .subHeading {
-      font-family: Josefin Sans;
-      color: #193166;
+    .gesture {
+      height: 40vh;
     }
     .btn {
-      color: #193166;
-      border-color: #193166;
+      color: #fff;
+      background-color: #193166;
+      border-radius: 0;
       font-size: 1em;
+      letter-spacing: 0.2em;
+      font-family: Josefin Sans;
     }
   }
   .whatsAppContainer {
@@ -31,10 +34,39 @@ section.sectionOne {
     display: flex;
     align-items: center;
     .whatsAppContent {
-      text-align: right;
+      position: relative;
+      right: -3.75vw;
+      text-align: center;
       margin-right: 0.8em;
-      color: #786D63;
+      color: #fff;
       font-family: Josefin Sans;
+      background-color: #CE4C16;
+      padding: 10px 60px 10px 30px;
+      border-radius: 10px;
+    }
+    img {
+      z-index: 2;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  section.sectionOne {
+    padding: 0;
+    .container {
+      justify-content: center;
+      .heading {
+        font-size: 8vw;
+        margin-bottom: 5vh;
+      }
+      img {
+        width: 60vw;
+        height: unset !important;
+        margin-bottom: 10vh;
+      }
+    }
+    .whatsAppContainer {
+      display: none;
     }
   }
 }

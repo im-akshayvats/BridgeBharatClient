@@ -4,27 +4,21 @@ import { Container, Typography, Button } from '@mui/material';
 
 import './style.scss';
 
-const border = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/border.png';
-const cowCart = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/cowCart.png';
+import contactUsGesture from '../../../assets/contactUsGesture.png';
 const whatsAppIcon = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/whatsAppIcon.png';
 
 export default function SectionOne() {
   return (
     <section className="sectionOne section">
-      <img src={border} alt="cowCart" />
       <Container className="container">
         <Typography variant="h3" className="heading">
           Looking to source Indian<br />Local Products?
         </Typography>
-        <img src={cowCart} alt="cowCart" className="cowCartImage" />
-        <Typography variant='h5' className="subHeading">
-          Start you journey now with us!
-        </Typography>
+        <img src={contactUsGesture} alt="handGesture" className="gesture" />
         <Button variant='outlined' className="btn">
           GET IN TOUCH
         </Button>
       </Container>
-      <img src={border} alt="cowCart" />
       <div className="whatsAppContainer">
         <Typography variant="h6" className="whatsAppContent">
           Talk directly to<br />our representative
