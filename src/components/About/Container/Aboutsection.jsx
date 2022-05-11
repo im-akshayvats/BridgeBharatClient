@@ -6,7 +6,7 @@ import './style.scss';
 
 const Aboutsection = () => {
   return (
-  <div>
+  <div className= "section">
     <div className="aboutimg">
         <img src = {Group} />
     </div>
