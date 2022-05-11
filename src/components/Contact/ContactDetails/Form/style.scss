@@ -1,0 +1,29 @@
+.formContainer {
+  background-color: #E08B19;
+  padding: 20px;
+  height: 100%;
+  * {
+    font-family: Josefin Sans !important;
+    color: white !important;
+  }
+  .contactForm {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 50px 100px;
+    .heading {
+      align-self: center;
+      margin-bottom: 1em;
+    }
+    .sendButton {
+      width: fit-content;
+      background-color: #193166;
+      font-family: Josefin Sans !important;
+      padding: 0.5em 3em;
+      letter-spacing: 0.2em;
+    }
+  }
+}

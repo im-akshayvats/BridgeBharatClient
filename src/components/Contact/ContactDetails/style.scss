@@ -1,0 +1,50 @@
+.contactDetailSection {
+  height: 100vh;
+  display: flex;
+  padding-top: 60px;
+  background-color: #FCF6F0;
+  z-index: 3;
+  div.firstHalf {
+    width: 60%;
+    .mapContainer {
+      width: 100%;
+      iframe {
+        width: 100%;
+        height: 100;
+      }
+    }
+    .contactInfo {
+      height: 65%;
+      background-color: #193166;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-left: 5vw;
+      .heading {
+        font-family: Cormorant;
+        color: #fff;
+      }
+      .icon {
+        color: #fff;
+        height: 60px;
+        width: 60px;
+        border: 2.5px solid #fff;
+        border-radius: 50px;
+        padding: 5px;
+        margin-right: 2em;
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        .values {
+          display: flex;
+          flex-direction: column;
+          color: #E08B19;
+        }
+      }
+    }
+  }
+  div.secondHalf {
+    width: 40%;
+  }
+}

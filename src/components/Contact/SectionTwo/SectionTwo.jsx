@@ -11,7 +11,7 @@ const leavesAndCow = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/leaves
 
 export default function SectionTwo() {
   return (
-    <section className="sectionTwo">
+    <section className="sectionTwo section">
       <img src={border} alt="border" />
       <div className="upperLayer">
         <img src={manWithFlower} alt="manWithFlower" style={{ width: '33vw' }}/>
