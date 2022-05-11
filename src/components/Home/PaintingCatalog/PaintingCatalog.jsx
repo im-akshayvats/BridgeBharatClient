@@ -43,6 +43,7 @@ export default function PaintingCatalog() {
   }
   const paintingContainer = useRef(null);
   const toggleButton = useRef(null);
+  const paintingCatalog = useRef(null);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => {
@@ -57,10 +58,12 @@ export default function PaintingCatalog() {
 
   useEffect(() => {
     if (expanded) {
-      paintingContainer.current.style.height = '2060px';
+      paintingCatalog.current.style.height = '1900px'
+      paintingContainer.current.style.height = '1600px';
       toggleButton.current.style.transform = 'rotate(180deg)';
     } else {
-      paintingContainer.current.style.height = '460px';
+      paintingCatalog.current.style.height = '100vh';
+      paintingContainer.current.style.height = '380px';
       toggleButton.current.style.transform = 'rotate(0deg)';
     }
     const elements = document.querySelectorAll('.paintingImageContainer');
@@ -129,7 +132,7 @@ export default function PaintingCatalog() {
   });
 
   return (
-    <section className="pictureCatalog section">
+    <section ref={paintingCatalog} className="pictureCatalog section">
       <Container className='catalogContainer'>
         <Modal
           open={open}
