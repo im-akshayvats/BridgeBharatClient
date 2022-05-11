@@ -19,6 +19,7 @@ section.productCatalog {
       display: flex;
       justify-content: space-between;
       transition: 750ms ease-in-out all;
+      height: 320px !important;
     }
     .toggleButton {
       margin-bottom: 1em;
@@ -45,6 +46,7 @@ section.productCatalog {
         flex-direction: column;
         justify-content: flex-start;
         overflow: hidden;
+        height: 260px !important;
       }
       .toggleButton {
         display: initial;

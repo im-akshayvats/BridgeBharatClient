@@ -21,6 +21,7 @@ section.pictureCatalog {
       justify-content: center;
       position: relative;
       top: -2.5em;
+      height: 318px !important;
       .imageContainer {
         .paintingImageContainer {
           position: relative;
@@ -188,6 +189,7 @@ section.pictureCatalog {
         justify-content: flex-start;
         overflow: hidden;
         transition: 750ms ease-in-out all;
+        height: 380px !important;
         .imageContainer {
           flex-direction: column;
           align-items: center;

@@ -31,7 +31,7 @@ export default function ProductCatalog() {
   useEffect(() => {
     if (expanded) {
       productCatalog.current.style.height = '1880px';
-      productList.current.style.height = '1460px';
+      productList.current.style.setProperty('height', "1460px", "important");
       toggleButton.current.style.transform = 'rotate(180deg)'
     } else {
       productCatalog.current.style.height = '100vh';

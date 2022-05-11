@@ -59,7 +59,7 @@ export default function PaintingCatalog() {
   useEffect(() => {
     if (expanded) {
       paintingCatalog.current.style.height = '1900px'
-      paintingContainer.current.style.height = '1600px';
+      paintingContainer.current.style.setProperty('height', "1600px", "important");
       toggleButton.current.style.transform = 'rotate(180deg)';
     } else {
       paintingCatalog.current.style.height = '100vh';
