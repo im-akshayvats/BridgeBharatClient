@@ -15,7 +15,6 @@ section.productCatalog {
       text-align: center;
     }
     .products {
-      height: 320px !important;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -46,7 +45,6 @@ section.productCatalog {
         flex-direction: column;
         justify-content: flex-start;
         overflow: hidden;
-        height: 260px !important;
       }
       .toggleButton {
         display: initial;
