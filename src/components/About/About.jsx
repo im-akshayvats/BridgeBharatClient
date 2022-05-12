@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Story from './Story/Story';
+import Mission from './Mission/Mission';
 import Team from './Team/Team';
 
 export default function About() {
   return (
     <main>
-      <Story />
+      <Mission />
       <Team />
     </main>
   )
