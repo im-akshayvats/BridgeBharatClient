@@ -2,12 +2,13 @@ section.mobileMotiveSection {
   height: 100vh;
   display: none;
   align-items: center;
+  padding-top: 70px;
   .container {
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     .motive {
       display: flex;
       flex-direction: column;
