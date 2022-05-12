@@ -3,7 +3,7 @@ import { Container, Typography } from '@mui/material';
 
 import './style.scss';
 
-import camel from '../../../assets/camel.png';
+const camel = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/camel.png';
 const blueLogo = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/blue.svg';
 const orangeLogo = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/orange.svg'
 const yellowLogo = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/yellow.svg';
