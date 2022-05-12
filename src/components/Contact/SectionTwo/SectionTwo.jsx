@@ -26,7 +26,7 @@ export default function SectionTwo() {
           Collaborate<br />with us
         </Typography>
         <Button variant='outlined' className="btn">
-          EMAIL US NOW
+          <a href="#contact">EMAIL US NOW</a>
         </Button>
       </Container>
       <div className="bottomLeaves">

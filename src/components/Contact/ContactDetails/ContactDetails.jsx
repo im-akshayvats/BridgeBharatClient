@@ -8,7 +8,7 @@ import MapContainer from './MapContainer/MapContainer';
 
 export default function ContactDetails() {
   return (
-    <section className="contactDetailSection section">
+    <section className="contactDetailSection section" id="contact">
       <div className="firstHalf">
         <MapContainer className="mapContainer" />
         <div className="contactInfo">

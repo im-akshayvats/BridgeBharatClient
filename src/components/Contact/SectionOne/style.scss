@@ -19,11 +19,14 @@ section.sectionOne {
       height: 40vh;
     }
     .btn {
-      color: #fff;
       background-color: #193166;
       border-radius: 0;
       letter-spacing: 0.2em;
       font-family: Josefin Sans;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
   .whatsAppContainer {

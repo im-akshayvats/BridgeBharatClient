@@ -16,7 +16,7 @@ export default function SectionOne() {
         </Typography>
         <img src={contactUsGesture} alt="handGesture" className="gesture" />
         <Button variant='outlined' className="btn">
-          GET IN TOUCH
+          <a href="#contact">GET IN TOUCH</a>
         </Button>
       </Container>
       

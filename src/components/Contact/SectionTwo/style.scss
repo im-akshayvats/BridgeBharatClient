@@ -44,8 +44,12 @@ section.sectionTwo {
       font-size: 1em;
       order: 3;
       background-color: #193166;
-      color: #fff;
       border-radius: 0;
+      letter-spacing: 0.2em;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
   .bottomLeaves {
