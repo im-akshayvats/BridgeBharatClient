@@ -25,6 +25,7 @@ section.sectionTwo {
       color: #193166;
       margin-bottom: 5vh;
       font-family: Josefin Sans;
+      order: 2;
       .homegrown {
         color: #ce4c16;
       }
@@ -34,12 +35,17 @@ section.sectionTwo {
       font-family: Cormorant;
       color: #E08B19;
       margin-bottom: 5vh;
+      order: 1;
     }
     .btn {
       margin-bottom: 5vh;
       color: #193166;
       border-color: #193166;
       font-size: 1em;
+      order: 3;
+      background-color: #193166;
+      color: #fff;
+      border-radius: 0;
     }
   }
   .bottomLeaves {
@@ -54,7 +60,7 @@ section.sectionTwo {
 @media only screen and (max-width: 720px) {
   section.sectionTwo {
     > img {
-      width: 30px;
+      display: none;
     }
     div.upperLayer {
       top: 40px;
@@ -71,18 +77,9 @@ section.sectionTwo {
       .smallHeading {
         font-size: 4vw;
         text-align: center;
-        order: 2;
       }
       .heading {
         font-size: 10vw;
-        order: 1;
-      }
-      .btn {
-        order: 3;
-        font-size: 0.7em;
-        background-color: #193166;
-        color: #fff;
-        border-radius: 0;
       }
     }
     .bottomLeaves {
