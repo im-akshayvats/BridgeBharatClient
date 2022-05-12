@@ -24,3 +24,23 @@ section.missionSection {
     }
   }
 }
+
+@media only screen and (max-width: 720px) {
+  section.missionSection {
+    .container {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      position: relative;
+      img {
+        position: absolute;
+        bottom: -2em;
+        width: 60%;
+      }
+      .content {
+        width: 100%;
+        z-index: 2;
+        text-align: center;
+      }
+    }
+  }
+}
