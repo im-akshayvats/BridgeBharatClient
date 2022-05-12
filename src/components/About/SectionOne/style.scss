@@ -38,3 +38,21 @@ section.sectionAboutOne {
     }
   }
 }
+
+@media only screen and (max-width: 720px) {
+  section.sectionAboutOne {
+    .container {
+      img {
+        position: relative;
+        left: 1em;
+      }
+      .heading {
+        font-size: 4vw;
+        line-height: 2em;
+      }
+      .motiveContainer {
+        display: none;
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ export default function SectionOne() {
       <Container className="container">
         <img src={camel} alt="camel" />
         <Typography variant="h6" className="heading">
-          YOUR SOURCING & WHOLESALE PARTNER FOR INDIAN<br />HERITAGE PRODUCTS AND ART
+          YOUR SOURCING & WHOLESALE PARTNER FOR INDIAN HERITAGE PRODUCTS AND ART
         </Typography>
         <div className="motiveContainer">
           <div className="motive">
