@@ -19,12 +19,15 @@ export default function SectionOne() {
           GET IN TOUCH
         </Button>
       </Container>
-      <div className="whatsAppContainer">
-        <Typography variant="h6" className="whatsAppContent">
-          Talk directly to<br />our representative
-        </Typography>
-        <img src={whatsAppIcon} alt="whatsAppIcon" />
-      </div>
+      
+      <a href="https://wa.me/919910797267" target={'_blank'} rel='noreferrer'>
+        <div className="whatsAppContainer">
+          <Typography variant="h6" className="whatsAppContent">
+            Talk directly to<br />our representative
+          </Typography>
+          <img src={whatsAppIcon} alt="whatsAppIcon" />
+        </div>
+      </a>
     </section>
   )
 }
