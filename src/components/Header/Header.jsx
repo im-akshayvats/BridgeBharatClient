@@ -74,19 +74,23 @@ export default function Header() {
           <Link to='/about'>
             <Typography variant='p' className='navLink'>ABOUT US</Typography>
           </Link>
-          <Typography variant='p' className='navLink'>CATALOG</Typography>
+          <a href="https://linktr.ee/bridgebharat" target='_blank' rel='noreferrer'>
+            <Typography variant='p' className='navLink'>CATALOG</Typography>
+          </a>
           <Link to='/contact'>
             <Typography variant='p' className='navLink'>CONTACT US</Typography>
           </Link>
         </nav>
       </Container>
         <nav className='smallNavigation' ref={smallNavigation}>
-          <Link to='/about'>
+          <Link to='/about' className='link'>
             <Typography variant='p' className='navLink'>ABOUT US</Typography>
           </Link>
-          <Typography variant='h6' className='navLink'>CATALOG</Typography>
-          <Link to='/contact'>
-            <Typography variant='h6' className='navLink'>CONTACT US</Typography>
+          <a href="https://linktr.ee/bridgebharat" target='_blank' className='link' rel='noreferrer'>
+            <Typography variant='p' className='navLink'>CATALOG</Typography>
+          </a>
+          <Link to='/contact' className='link'>
+            <Typography variant='p' className='navLink'>CONTACT US</Typography>
           </Link>
         </nav>
     </header>
