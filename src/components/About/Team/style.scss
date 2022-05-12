@@ -2,12 +2,16 @@
   height: 100vh;
   padding-top: 70px;
   background-color: #FCF6F0;
+  overflow: hidden;
+  *::-webkit-scrollbar {
+    display: none;
+  }
   .container {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     .title {
       margin-bottom: 2em;
       .text {
@@ -15,12 +19,16 @@
         color: #786D63;
       }
     }
-    div.membersContainer {
+    .members {
       width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
+      overflow-x: scroll;
+      align-self: flex-start;
+      div.membersFirstContainer, div.membersSecondContainer {
+        min-width: 1050px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2em;
+      }
     }
   }
 }
