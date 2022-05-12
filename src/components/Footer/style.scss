@@ -19,7 +19,7 @@ footer {
       }
       .socialMedia {
         margin: 1em 0;
-        .icon:not(:last-child) {
+        a:not(:last-child) {
           margin-right: 0.5em;
         }
       }

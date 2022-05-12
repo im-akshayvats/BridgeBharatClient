@@ -16,10 +16,18 @@ export default function Footer() {
             Dedicated to the strength and resilience of  the world’s small businesses
           </Typography>
           <div className="socialMedia">
-            <Instagram className="icon"/>
-            <Facebook className="icon"/>
-            <LinkedIn className="icon"/>
-            <Twitter className="icon"/>
+            <a href="https://www.instagram.com/bridgebharat/" target="_blank" rel="noopener noreferrer">
+              <Instagram className="icon"/>
+            </a>
+            <a href="https://www.facebook.com/bridgeinbharat" target="_blank" rel="noopener noreferrer">
+            < Facebook className="icon"/>
+            </a>
+            <a href="https://www.linkedin.com/company/bridge-bharat/" target="_blank" rel="noopener noreferrer">
+              <LinkedIn className="icon"/>
+            </a>
+            <a href="https://twitter.com/BharatBridge" target="_blank" rel="noopener noreferrer">
+              <Twitter className="icon"/>
+            </a>
           </div>
           <Typography variant="p" className="copyright">
             ©BRIDGE BHARAT 2022
