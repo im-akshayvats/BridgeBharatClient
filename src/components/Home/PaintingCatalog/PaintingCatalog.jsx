@@ -4,12 +4,13 @@ import { ExpandMore } from '@mui/icons-material';
 
 import './style.scss';
 
+
 const couch = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/sofa.svg';
 const one = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/one.png';
 const two = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/two.png';
 const three = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/three.webp';
 const four = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/four.png';
-const five = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/five.png';
+const five = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/five.jpg';
 
 const style = {
   position: 'absolute',
@@ -58,8 +59,8 @@ export default function PaintingCatalog() {
 
   useEffect(() => {
     if (expanded) {
-      paintingCatalog.current.style.height = '1900px'
-      paintingContainer.current.style.setProperty('height', "1600px", "important");
+      paintingCatalog.current.style.height = '2000px'
+      paintingContainer.current.style.setProperty('height', "1800px", "important");
       toggleButton.current.style.transform = 'rotate(180deg)';
     } else {
       paintingCatalog.current.style.height = '100vh';
@@ -104,8 +105,8 @@ export default function PaintingCatalog() {
             setAbout('‘A modified version of ‘nakashi’ art practiced in Telangana, Cheriyal scroll paintings are in a narrative format like a film roll, depicting stories from Indian mythology, puranas, and epics. Traditionally, the Nakashis (artists) depicted the adventures and deeds of local folk heroes which were presented by the story-telling community, ‘Kaki Padagollu’ accompanied by music and dance. The colours used are completely natural.')
             break;
           case 'five':
-            setName("Ashta Ganesha");
-            setArtist("By Lokesh Joshi");
+            setName("Forest Life Gond");
+            setArtist("By Venkat Shyam");
             setImage(five);
             setArtform('Phadchitra');
             setDimensions('1.5*3 feet');
@@ -222,10 +223,10 @@ export default function PaintingCatalog() {
               <img className='paintingImage' src={five} alt="Painting" width={132}/>
               <div className="paintingMiniInfo">
                 <div className="name">
-                  Ashta Ganesh
+                  Forest life Gond
                 </div>
                 <div className="description">
-                  Lokesh Joshi
+                  Venkat Shyam
                 </div>
               </div>
             </div>
