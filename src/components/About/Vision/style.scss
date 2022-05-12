@@ -27,6 +27,29 @@ section.visionSection {
         font-family: Josefin Sans;
         color: #786D63;
         line-height: 1.75em;
+        margin-bottom: 2em;
+      }
+      a {
+        font-style: italic;
+        color: #193166;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  section.visionSection {
+    .container {
+      flex-direction: column-reverse;
+      position: relative;
+      .imageContainer {
+        width: 100%;
+        position: absolute;
+      }
+      .content {
+        width: 100%;
+        text-align: center;
+        z-index: 2;
       }
     }
   }
