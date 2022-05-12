@@ -1,0 +1,33 @@
+section.visionSection {
+  height: 100vh;
+  padding-top: 70px;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .imageContainer {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 80%;
+      }
+    }
+    .content {
+      width: 50%;
+      .heading {
+        margin-bottom: 0.25em;
+        font-family: Cormorant Garamond;
+        color: #786D63;
+      }
+      .description {
+        font-family: Josefin Sans;
+        color: #786D63;
+        line-height: 1.75em;
+      }
+    }
+  }
+}
