@@ -9,27 +9,27 @@ const yellowLogo = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/yellow.svg'
 
 export default function MobileMotive() {
   return (
-    <section className="mobileMotiveSection section">
+    <section className="motiveSection section">
       <Container className="container">
         <div className="motive">
           <img src={blueLogo} alt="blueLogo" />
-          <Typography variant='body2' className="name">SMALL<br />MoQs</Typography>
+          <Typography variant='body2' className="name">DIGITAL</Typography>
         </div>
         <div className="motive">
           <img src={orangeLogo} alt="orangeLogo" />
-          <Typography variant='body2' className="name">QUALITY<br />ASSURANCE</Typography>
+          <Typography variant='body2' className="name">RELIABLE</Typography>
         </div>
         <div className="motive">
           <img src={yellowLogo} alt="yellowLogo" />
-          <Typography variant='body2' className="name">FREE<br />RETURNS</Typography>
+          <Typography variant='body2' className="name">RESPONSIBLE</Typography>
         </div>
         <div className="motive">
           <img src={orangeLogo} alt="orangeLogo" />
-          <Typography variant='body2' className="name">JOURNEY<br />TRACKING</Typography>
+          <Typography variant='body2' className="name">PERSONAL</Typography>
         </div>
         <div className="motive">
           <img src={blueLogo} alt="blueLogo" />
-          <Typography variant='body2' className="name">MARKETING<br />COLLATERAL</Typography>
+          <Typography variant='body2' className="name">HANDPICKED</Typography>
         </div>
       </Container>
     </section>
