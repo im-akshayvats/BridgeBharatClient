@@ -4,7 +4,7 @@ import { Container, Typography } from '@mui/material';
 import './style.scss';
 import Member from './Member/Member';
 
-import aakanksha from '../../../assets/aakanksha.png'
+const aakanksha = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/aakanksha.png'
 
 export default function Team() {
   return (

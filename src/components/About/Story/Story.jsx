@@ -2,8 +2,8 @@ import React from 'react';
 
 import StoryTemplate from './StoryTemplate/StoryTemplate';
 
-import vision from '../../../assets/visionLogo.png';
-import globe from '../../../assets/globe.png';
+const vision = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/visionLogo.png';
+const globe = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/globe.png';
 
 export default function Story() {
   return (

@@ -5,7 +5,7 @@ import { Instagram, Facebook, LinkedIn, Twitter, Search } from '@mui/icons-mater
 
 import './style.scss';
 
-import footerImage from '../../assets/footerImage.svg';
+const footerImage = 'https://d2dm1r7c3wtyk.cloudfront.net/images/global/footerImage.svg';
 
 export default function Footer() {
   return (

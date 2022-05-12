@@ -4,7 +4,7 @@ import { Container, Typography, Button } from '@mui/material';
 
 import './style.scss';
 
-import contactUsGesture from '../../../assets/contactUsGesture.png';
+const contactUsGesture = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/contactUsGesture.png';
 const whatsAppIcon = 'https://d2dm1r7c3wtyk.cloudfront.net/images/contact/whatsAppIcon.png';
 
 export default function SectionOne() {

@@ -3,8 +3,8 @@ import { Typography, Box, Button, Container } from '@mui/material';
 
 import './style.scss';
 
-import heroOne from '../../../assets/heroOne.png';
-import heroTwo from '../../../assets/heroTwo.png';
+const heroOne = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/heroOne.png';
+const heroTwo = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/heroTwo.png';
 
 export default function Hero() {
   return (
