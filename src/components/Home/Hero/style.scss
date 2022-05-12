@@ -2,6 +2,20 @@ section.hero {
   text-align: center;
   height: 100vh;
   padding-top: 70px;
+  position: relative;
+  .alert {
+    background-color: #CE4C16;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    position: absolute;
+    top: 60px;
+    padding: 10px;
+    width: 100%;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
   .heroContainer {
     height: 100%;
     display: flex;
@@ -98,6 +112,11 @@ section.hero {
 @media only screen and (max-width: 720px) {
   section.hero {
     height: 100vh;
+    padding-top: 100px;
+    .alert {
+      font-size: 3vw;
+      top: 65px;
+    }
     .heroContainer {
       height: 100%;
       display: flex;
@@ -111,7 +130,7 @@ section.hero {
         margin-bottom: 1em;
         div {
           width: 50%;
-          height: 40vh;
+          height: 35vh;
         }
         div.heroBannerHeading {
           display: none;

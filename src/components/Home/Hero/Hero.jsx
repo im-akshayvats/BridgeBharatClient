@@ -9,6 +9,11 @@ const heroTwo = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/heroTwo.png';
 export default function Hero() {
   return (
     <section className="hero section">
+      <div className="alert">
+        <a href="https://issuu.com/bridgebharat/docs/bridge_bharat_vrittam_final" target="_blank" rel="noopener noreferrer">
+          BridgeBharat VRITTAM REPORT out now. Click here to read it!
+        </a>
+      </div>
       <Container className='heroContainer'>
         <Typography variant='h4' className='smallHeading'>
           YOUR<br/><span className='desi'>DESI</span><br/>WHOLESALE<br/>PARTNER
