@@ -25,8 +25,8 @@ export default function CommercialMessages() {
       />
       <MessageTemplate
         heading={'Exclusive Marketing Collateral'}
-        description={'From our grassroot research and relationships, get access to our detailed guide of history and process behind the making of the product.'}
-        highlightedDescription={'Offer your customer a complete experience of Indian products'}
+        description={'Get access to detailed legacy guides of your favorite products.'}
+        highlightedDescription={' Offer your customers a complete experience of India.'}
         image={marketing}
       />
     </section>
