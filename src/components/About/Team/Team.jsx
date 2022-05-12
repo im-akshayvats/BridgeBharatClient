@@ -4,15 +4,14 @@ import { Container, Typography } from '@mui/material';
 import './style.scss';
 import Member from './Member/Member';
 
-import mansi from '../../../assets/mansi.png';
-import anupriyaDubey from '../../../assets/anupriyaDubey.png';
-import durga from '../../../assets/durga.png';
-import parul from '../../../assets/parul.png';
-import anisha from '../../../assets/anisha.png';
-import anupriya from '../../../assets/anupriya.png';
-import akshay from '../../../assets/akshay.png';
-
 const aakanksha = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/aakanksha.png'
+const mansi = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/mansi.png';
+const anupriyaDubey = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/anupriyaDubey.png'
+const durga = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/durga.png'
+const parul = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/parul.png'
+const anisha = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/anisha.png'
+const anupriya = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/anupriya.png'
+const akshay = 'https://d2dm1r7c3wtyk.cloudfront.net/images/about/akshay.png'
 
 export default function Team() {
   return (
