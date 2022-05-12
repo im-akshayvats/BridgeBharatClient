@@ -26,6 +26,7 @@ section.sectionTwo {
       margin-bottom: 5vh;
       font-family: Josefin Sans;
       order: 2;
+      text-align: center;
       .homegrown {
         color: #ce4c16;
       }
@@ -46,6 +47,7 @@ section.sectionTwo {
       background-color: #193166;
       border-radius: 0;
       letter-spacing: 0.2em;
+      font-family: Josefin Sans;
       a {
         color: #fff;
         text-decoration: none;
@@ -79,9 +81,7 @@ section.sectionTwo {
     .container {
       justify-content: center;
       .smallHeading {
-        width: 80%;
         font-size: 4vw;
-        text-align: center;
       }
       .heading {
         font-size: 10vw;

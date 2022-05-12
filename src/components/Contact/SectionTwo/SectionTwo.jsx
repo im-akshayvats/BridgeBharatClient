@@ -20,7 +20,7 @@ export default function SectionTwo() {
       </div>
       <Container className="container">
         <Typography variant="h6" className="smallHeading">
-          Are you a <span className="homegrown">homegrown</span> label looking to make it big globally?
+          Are you a <span className="homegrown">homegrown</span> label<br />looking to make it big globally?
         </Typography>
         <Typography variant="h1" className="heading">
           Collaborate<br />with us
