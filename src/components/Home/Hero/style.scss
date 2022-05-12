@@ -41,7 +41,7 @@ section.hero {
         background-color: #FCF6F0;
         .heading {
           letter-spacing: 0.2em;
-          line-height: 2.5em;
+          line-height: 2em;
           color: #193166;
           font-family: 'Josefin Sans', sans-serif;
           font-size: 2.5vw;
@@ -56,6 +56,7 @@ section.hero {
     }
     .subHeading {
       font-family: 'Josefin Sans', sans-serif;
+      font-weight: 600;
       letter-spacing: 0.2em;
       line-height: 40px;
       color: #193166;
@@ -64,9 +65,10 @@ section.hero {
     .buttonContainer {
       * {
         color: white;
+        letter-spacing: 0.2em;
       }
       margin-top: 1em;
-      padding: 0 20%;
+      padding: 0 15%;
       display: flex;
       justify-content: space-evenly;
       button {
