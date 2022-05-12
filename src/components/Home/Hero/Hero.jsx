@@ -31,19 +31,25 @@ export default function Hero() {
         </Typography>
         <Box className='buttonContainer'>
           <Button variant="outlined" className='join'>
-            <Typography>
-              JOIN THE WAITLIST
-            </Typography>
+            <a href="https://docs.google.com/forms/d/1Gmz88QxYzXrMRnHJ3DM0nyUhxk3K3h8PHxT7BTaGo_I/viewform?edit_requested=true" target="_blank" rel="noreferrer">
+              <Typography>
+                JOIN THE WAITLIST
+              </Typography>
+            </a>
           </Button>
           <Button variant="outlined" className='connect'>
-            <Typography>
-              CONNECT
-            </Typography>
+            <a href="https://wa.me/919910797267" target={'_blank'} rel='noreferrer'>
+              <Typography>
+                CONNECT
+              </Typography>
+            </a>
           </Button>
           <Button variant="outlined" className='explore'>
-            <Typography>
-              EXPLORE
-            </Typography>
+            <a href="https://linktr.ee/bridgebharat" target={'_blank'} rel='noreferrer'>
+              <Typography>
+                EXPLORE
+              </Typography>
+            </a>
           </Button>
         </Box>
       </Container>

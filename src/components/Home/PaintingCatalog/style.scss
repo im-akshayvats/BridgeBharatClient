@@ -109,13 +109,16 @@ section.pictureCatalog {
         width: 570px;
       }
       .viewMoreButton {
-        color: white;
         border: none;
         border-radius: 0;
         background-color: #193166;
         font-family: 'Josefin Sans', sans-serif;
         position: absolute;
         bottom: 0.75em;
+        a {
+          color: white;
+          text-decoration: none;
+        }
       }
     }
     .viewMoreSmallButton {
@@ -125,6 +128,10 @@ section.pictureCatalog {
         border-width: 2px;
         font-family: 'Josefin Sans', sans-serif;
         margin-top: 1em;
+        a {
+          color: white;
+          text-decoration: none;
+        }
     }
     .toggleButton {
       display: none;
@@ -166,8 +173,13 @@ section.pictureCatalog {
     width: 60%;
     margin-top: 2em;
     .viewMoreButton {
-      color: #193166;
-      border-color: #193166;
+      border-radius: 0;
+      background-color: #193166;
+      a {
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 0.2em;
+      }
       span {
         color: #193166;
       }

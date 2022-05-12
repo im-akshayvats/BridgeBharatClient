@@ -47,7 +47,7 @@ export default function ProductCatalog() {
           Handcrafted Products from the Heart of Indian Artisan Community
         </Typography>
         <div className='products' ref={productList}>
-          <Product image={candleStands} name={'CANDEL STANDS'}/>
+          <Product image={candleStands} name={'CANDLE STANDS'}/>
           <Product image={lamps} name={'LAMPS'}/>
           <Product image={vases} name={'VASES'}/>
           <Product image={plates} name={'PLATES'}/>
@@ -56,7 +56,9 @@ export default function ProductCatalog() {
         <div className="toggleButton" ref={toggleButton} onClick={handleClick}>
           <ExpandMore />
         </div>
-        <Button variant='outlined' className='viewMoreButton'>explore</Button>
+        <Button variant='outlined' className='viewMoreButton'>
+          <a href="https://linktr.ee/bridgebharat" target="_blank" rel="noopener noreferrer">explore</a>
+        </Button>
       </Container>
       <Features />
     </section>

@@ -159,7 +159,9 @@ export default function PaintingCatalog() {
               <Typography variant='h6' mt={1}>
                 <span style={{color: '#193166'}}>About the artform</span> {about}
               </Typography>
-              <Button variant='outlined' sx={{mt: 5}} className='viewMoreButton'>view more</Button>
+              <Button variant='outlined' sx={{mt: 5}} className='viewMoreButton'>
+                <a href="https://linktr.ee/bridgebharat" target="_blank" rel="noopener noreferrer">view more</a>
+              </Button>
             </div>
           </Box>
         </Modal>
@@ -231,9 +233,13 @@ export default function PaintingCatalog() {
         </Box>
         <Box className='imageButtonBox'>
           <img src={couch} alt="Couch" />
-          <Button variant='outlined' className='viewMoreButton'>view more</Button>
+          <Button variant='outlined' className='viewMoreButton'>
+            <a href="https://linktr.ee/bridgebharat" target="_blank" rel="noopener noreferrer">view more</a>
+          </Button>
         </Box>
-        <Button variant='outlined' className='viewMoreSmallButton'>View More</Button>
+        <Button variant='outlined' className='viewMoreSmallButton'>
+          <a href="https://linktr.ee/bridgebharat" target="_blank" rel="noopener noreferrer">view more</a>
+        </Button>
         <div className='toggleButton' ref={toggleButton} onClick={handleClick}>
           <ExpandMore/>
         </div>

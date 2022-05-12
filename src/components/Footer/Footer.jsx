@@ -32,7 +32,7 @@ export default function Footer() {
           </div>
           <div className="navigationLinks">
             <NavLink
-              to={`/`}
+              to={`/about`}
               className='navLink'
             >
               ABOUT US
@@ -43,12 +43,14 @@ export default function Footer() {
             >
               CONTACT US
             </NavLink>
-            <NavLink
-              to={`/`}
+            <a
+              href='https://linktr.ee/bridgebharat'
+              target='_blank'
+              rel='noopener noreferrer'
               className='navLink'
             >
               EXPLORE
-            </NavLink>
+            </a>
             <NavLink
               to={`/`}
               className='term otherLink'

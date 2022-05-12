@@ -27,11 +27,14 @@ section.productCatalog {
     }
     .viewMoreButton {
       background-color: #193166;
-      color: white;
       border: none;
       border-radius: 0;
       font-family: Josefin Sans;
       letter-spacing: 0.2em;
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }

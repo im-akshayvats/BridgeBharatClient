@@ -75,6 +75,9 @@ section.hero {
         border-color: #193166;
         background-color: #193166;
         border-radius: 0;
+        a {
+          text-decoration: none;
+        }
         p {
           margin: 0 2rem;
           font-family: 'Josefin Sans', sans-serif;
