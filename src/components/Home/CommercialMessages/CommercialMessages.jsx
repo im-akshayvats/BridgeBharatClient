@@ -6,7 +6,7 @@ import './style.scss';
 
 const endToEnd = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/endToEndImage.png';
 const customization = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/customization.gif';
-const marketing = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/marketing.gif';
+const marketing = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/marketing.png';
 
 export default function CommercialMessages() {
   return (
