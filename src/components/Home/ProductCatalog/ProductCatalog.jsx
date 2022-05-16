@@ -16,6 +16,7 @@ const mirror = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/mirror.svg';
 
 export default function ProductCatalog() {
   const [expanded, setExpanded] = useState(false);
+  
   const handleClick = () => {
     const productSection = document.querySelector('.productCatalog');
     if (expanded) {

@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
+import Veera from  './Images/Veera.png';
+import Veera3 from  './Images/Veera3.png';
+import Veera7 from  './Images/Veera7.png';
+import Veera8 from  './Images/Veera7.png';
 
 import './style.scss';
 import Card from './Card/Card';
@@ -36,21 +40,26 @@ export default function Testimonials() {
       <Partners />
       <Slider {...settings}>
         <Card
+          img={Veera8}
           review={"We purchased two Phadd 'Tree of Life' paintings from Bridge Bharat. I'm absolutely in love with both of them. Great going, guys! "}
           author={"Viji Chaudhary"}
         />
         <Card
+          img={Veera}
           review={"You guys are doing such important work at archiving Indian art and heritage. We have such a deep culture, I wish everyone gets to witness it! "}
           author={"Aishwarya Gupta"}
         />
         <Card
+          img={Veera3}
           review={"The Bridge Bharat art classes take me back to my school art lessons! Such nostalgia "}
           author={"Veera Chaudhary"}
         />
         <Card
+          img={Veera7}
           review={"Learning this new Kalamkari folk art was a great experience. The mentor was organized and engaging making complicated artwork easy to understand. Highly recommend this class by Bridge Bharat. "}
           author={"Anupa Paul"}
         />
+
       </Slider>
     </section>
   );

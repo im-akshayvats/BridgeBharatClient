@@ -1,17 +1,19 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 
+
 import './style.scss';
 
 const authorImage = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/reviewAuthor.png';
 const upQuote = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/upQuote.png';
 const downQuote = 'https://d2dm1r7c3wtyk.cloudfront.net/images/home/downQuote.png';
 
-export default function Card({review, author}) {
+export default function Card({review, author,img}) {
   return (
+    <div>
     <Box className='cardBox'>
       <Box className='imageBox'>
-        <img src={authorImage} alt="AuthorImage" />
+        <img src={img} alt="AuthorImage" />
         <div className="dot dotOne" />
         <div className="dot dotTwo" />
         <div className="dot dotThree" />
@@ -29,6 +31,10 @@ export default function Card({review, author}) {
         </Typography>
         <img src={upQuote} alt="Quote" className='upQuote'/>
       </Box>
+      
     </Box>
+    </div>
+    
+    
   )
 }

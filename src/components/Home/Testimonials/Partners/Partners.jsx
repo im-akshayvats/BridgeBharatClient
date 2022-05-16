@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import { Box } from '@mui/material';
+import Veera from  '../Images/Veera.png';
+
 
 import './style.scss';
 
