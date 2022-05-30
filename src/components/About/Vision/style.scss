@@ -50,7 +50,18 @@ section.visionSection {
         width: 100%;
         text-align: center;
         z-index: 2;
+
+        .heading {
+          font-size:3em !important ;
+
+        }
+        .description {
+          font-size: 1em;
+        }
+
+
       }
+      
     }
   }
 }

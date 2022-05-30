@@ -83,13 +83,13 @@ export default function Header() {
         </nav>
       </Container>
         <nav className='smallNavigation' ref={smallNavigation}>
-          <Link to='/about' className='link'>
+          <Link to='/about' className='link' onClick={handleClick}>
             <Typography variant='p' className='navLink'>ABOUT US</Typography>
           </Link>
-          <a href="https://linktr.ee/bridgebharat" target='_blank' className='link' rel='noreferrer'>
+          <a href="https://linktr.ee/bridgebharat" target='_blank' className='link' rel='noreferrer'  onClick={handleClick}>
             <Typography variant='p' className='navLink'>CATALOG</Typography>
           </a>
-          <Link to='/contact' className='link'>
+          <Link to='/contact' className='link'  onClick={handleClick}>
             <Typography variant='p' className='navLink'>CONTACT US</Typography>
           </Link>
         </nav>

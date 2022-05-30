@@ -8,9 +8,10 @@ import Contact from './components/Contact/Contact.jsx';
 import About from './components/About/About.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
+
 export default function App() {
   return (
-    <Router>
+      <Router>
       <Header />
       <WhatsApp />
       <Routes>
@@ -20,5 +21,6 @@ export default function App() {
       </Routes>
       <Footer />
     </Router>
+
   )
 }

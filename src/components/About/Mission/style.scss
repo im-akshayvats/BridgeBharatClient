@@ -40,6 +40,13 @@ section.missionSection {
         width: 100%;
         z-index: 2;
         text-align: center;
+
+        .heading {
+          font-size: 3em;
+        }
+        .description {
+          font-size: 1em;
+        }
       }
     }
   }
